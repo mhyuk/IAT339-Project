@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Project_RC (Real Clothes) - Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    
+
+
+  </head>
+
+
+  <body>
+
+    <nav>
+      <div class="navbar">
+        <a class="active" href="#">SHOP</a>
+        <a href="#">COLLECTIONS</a>
+        <a href="#">REVIEWS</a>
+        <a href="#">ABOUT</a>
+      </div>
+    </nav>      <div style="clear: both;"></div><br>
+    
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+      </section>
+      <table class="cart">
+        <tr class="mainFont">
+          <td></td>
+          <td><b>Item</b></td>
+          <td><b>Item Price</b></td>
+          <td><b>Quantity</b></td>
+        </tr>
+        <tr class="paragraph">
+          <td><img src="img/item1.png" height="225px"></td>
+          <td><p>Gold Pearl Choker Necklace</p> <p><b>Color </b> Gold/White</p></td>
+          <td>CA$84.00</td>
+          <td><input type="text" id="cart" name="cart" size="1" value="1"></td>
+        </tr>
+        <tr>
+          <td><img src="img/item3.png" height="225px"></td>
+          <td><p>Golden Rose Resin Earring</p> <p><b>Color </b> Gold</p></td>
+          <td>CA$35.00</td>
+          <td><input type="text" id="cart" name="cart" size="1" value="1"></p></td>
+        </tr>
+      </table>
+<section class="element"></section>
+      <h3>Payment Form</h3>
+        <form class="navfont form_input" >
+          <ul>
+            <label class="container">Credit or Debit Card<input type="radio" checked="checked" name="payment" value="card">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Paypal<input type="radio" name="payment" value="paypal">
+              <span class="checkmark"></span>
+            </label>
+
+          <p>Card Number * <br>
+          <input type="text" id="cardNumber" name="cardNumber"  placeholder="XXXX XXXX XXXX XXXX"></p>
+          <p class="navfont">Expiration Date *<br>
+          <input type="text" id="month" name="month" placeholder="-- Month--">     
+          <input type="text" id="year" name="year" placeholder="-- Year --"></p>  
+          <p class="navfont">CVV *      <br>
+          <input type="text" id="cvv" name="cvv" ></p>     <br>
+          <a href="#" class="button button1" >SUBMIT</a>
+        </ul>
+        </form>
+
+
+
+
+  </body>
+</html>
