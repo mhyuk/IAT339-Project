@@ -1,6 +1,6 @@
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+  STYLE GUIDE STYLING
+  Default styling for the style guide
 */
 body {
   font-family: sans-serif;
@@ -94,7 +94,7 @@ a{
 
 }
 
-/* 
+/*
   INTERACTIVE ELEMENTS -------------------
 */
 
@@ -104,7 +104,7 @@ a{
   padding: 0.5rem;
   color: black;
   text-decoration: none;
-  transition-property: background-color; 
+  transition-property: background-color;
   transition-duration: 0.5s;
 
   border: none;
@@ -136,7 +136,7 @@ a{
 
 .form_input input:active, input:hover, .column3 .btn:hover {
   border: 1px solid #779c92;
-  
+
 }
 
 input:focus{
@@ -236,14 +236,14 @@ https://www. .com/howto/howto_css_custom_checkbox.asp------*/
   transition: .4s ease;
 }
 
-/* 
+/*
   TEXT ELEMENTS -------------------
 */
 
 
 
 
-/* 
+/*
   COMBINED ELEMENTS -------------------
 */
 
@@ -256,7 +256,7 @@ https://www. .com/howto/howto_css_custom_checkbox.asp------*/
 .navbar a.active {
   transition: 0.4s;
   text-decoration: underline;
-  
+
 
 }
 
@@ -265,7 +265,7 @@ https://www. .com/howto/howto_css_custom_checkbox.asp------*/
   transition: 0.4s;
   text-decoration: underline;
   color: rgb(116, 116, 116);
-  
+
 
 }
 
@@ -275,11 +275,13 @@ vertical-align: top;
 width: 95%;
 
 }
+
+
 .cart td {
   padding-right: 5%;
 }
 
-/* 
+/*
   BRANDING COMPONENTS -------------------
 */
 
@@ -313,7 +315,7 @@ width: 95%;
   margin-left: 3em;
   height: 20vw;
   max-width: 100%;
-  
+
 
   transition: .5s ease;
   backface-visibility: hidden;
@@ -368,7 +370,151 @@ width: 95%;
 
 }
 
+<<<<<<< HEAD
 .icon{
   width: 1.1em;
   margin-bottom:-3px;
 }
+=======
+
+
+/*  NEWLY ADDED by Sunita: payment form   */
+
+.inner_row{
+  max-width: 1200px;
+  height: auto;
+  margin: 1px auto;
+  background: #fff;
+  padding:  20px 40px 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+
+}
+
+
+.contain {
+  background-color: #fff; /* originally was gray */
+  padding: 5px 20px 15px 20px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.icon-contain {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn-pay {
+  background-color: #c57648;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.btn-pay:hover {
+  background-color: #84a98c;
+}
+
+.text:hover {
+  border: 2px solid  #84a98c;
+}
+
+a {
+  color: #00b4d8;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/*
+  cart details  https://www.youtube.com/watch?v=oXrlgOEiy6o   https://codepen.io/theresa-e/pen/BOBQxR  -------------------
+*/
+
+.cart-page{
+  margin: 100px 10%;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-info{
+  display: flex;
+  flex-wrap: wrap;
+}
+th{
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #779c92;
+  font-weight: normal;
+}
+td{
+  padding: 10px 5px;
+}
+td input{
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+}
+td a{
+  color: #ff523b;
+  font-size: 12px;
+}
+td img{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table{
+  border-top: 5px solid #e0dad7;
+  width: 100%;
+  max-width: 600px;
+}
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+
+.bottom-line{
+  margin: 80px auto;
+  border-top: 5px solid #e0dad7;
+  width: 100%;
+  max-width: 1300px;
+}
+>>>>>>> master
