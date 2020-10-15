@@ -43,24 +43,24 @@ code {
 
 a:link {
   text-decoration: none;
-  color: black;
+  color: #333333;
 
 }
 
 a:visited {
   text-decoration: none;
-  color: black;
+  color: #333333;
 
 }
 
 a:hover {
-  color: #868686;
+  color: #999999;
   text-decoration: underline;
 
 }
 
 a:active {
-  color: black;
+  color: #333333;
 }
 
 .mainFont{
@@ -84,6 +84,16 @@ a:active {
   letter-spacing: 1px;
 }
 
+.textcolor{
+  color: #779c92;
+}
+
+a{
+  color: #333333;
+  transition: color 0.4s;
+
+}
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -102,7 +112,7 @@ a:active {
 }
 
 .button1{
-  border: 2px solid black;
+  border: 2px solid #779c92;
 
 }
 
@@ -112,17 +122,35 @@ a:active {
 }
 
 .button:hover, .button-nav:focus {
-  background-color: black;
+  background-color: #779c92;
   color: white;
 }
 
 .form_input input{
   border: 1px solid lightgray;
+  border-radius: 3px;
+  width: 15vw;
+  margin-bottom: 0.2vw;
+  padding: 0.3vw;
 }
 
-.form_input input:focus, input:hover, input:active, .column3 .btn:hover {
-  border: 1px solid black;
+.form_input input:active, input:hover, .column3 .btn:hover {
+  border: 1px solid #779c92;
+  
 }
+
+input:focus{
+  background-color: #f2f0e0;
+}
+
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+
+}
+
 
 /*---------- w3schools How TO - Custom Checkbox ---------
 https://www. .com/howto/howto_css_custom_checkbox.asp------*/
@@ -162,11 +190,13 @@ https://www. .com/howto/howto_css_custom_checkbox.asp------*/
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: #ccc;
+  transition: 0.4s;
+
 }
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: black;
+  background-color: #786062;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -193,7 +223,7 @@ https://www. .com/howto/howto_css_custom_checkbox.asp------*/
 
 .product{
   position: relative;
-  width: 40%;
+  width: 10%;
   height: 30%;
 
 }
@@ -203,7 +233,7 @@ https://www. .com/howto/howto_css_custom_checkbox.asp------*/
 }
 .product:hover .image-hover {
   opacity: 0.6;
-  transition: .5s ease;
+  transition: .4s ease;
 }
 
 /* 
@@ -224,13 +254,19 @@ https://www. .com/howto/howto_css_custom_checkbox.asp------*/
 }
 
 .navbar a.active {
+  transition: 0.4s;
   text-decoration: underline;
+  
+
 }
 
 
 .navbar a:hover {
+  transition: 0.4s;
   text-decoration: underline;
   color: rgb(116, 116, 116);
+  
+
 }
 
 .cart{
@@ -257,5 +293,77 @@ width: 95%;
   float: left;
   padding-left: 2%;
   width: 80%;
+
+}
+
+.overlayRight {
+  background-color: #c57648;
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  padding: 8px 2px;
+  width: 40%;
+  margin-left: 48px;
+  transform: translateY(-108%);
+  margin-bottom: -35px;
+}
+
+.image {
+  opacity: 1;
+  margin-left: 3em;
+  height: 20vw;
+  max-width: 100%;
+  
+
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image:hover {
+  opacity: 0.6;
+  transition: .4s ease;
+}
+
+/* Flex box */
+.productBox {
+
+	/*
+		The statement below sets us into the flexbox display mode. Note support for flexbox still necessitates some vendor prefixes (see http://caniuse.com/#search=flex)
+	*/
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex;
+
+	/*
+		A flexbox will try to fit all elements in one line by default. The 'flex-wrap' property lets us wrap child elements that become too wide for their current row.
+	*/
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	/*
+		To get our flexbox to change how elements are spanned across the remaining space, we can use the 'justify-content' property. In this case, we are specifying that we want the extra space to be balanced around our elements.
+	*/
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: center;
+	flex-direction: row;
+
+}
+
+
+.productBox-item-product-img {
+	/*
+		Given we are working with an image, in this case we have set a flex-basis value that is a pixel value to reflect the 'minimum' width of the image before the flexbox reflows and stacks the elements inside. Additionally, the use of a flex-grow value of 3 ensures that our image is 'heavier' (will take up more space) when available.
+	*/
+	-webkit-flex: 3 1 400px;
+	-ms-flex: 3 1 400px;
+	flex: 3 1 400px;
+
+}
+
+.productTitle{
+  text-align: left;
+  margin-left: 2.9em;
 
 }

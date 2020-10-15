@@ -23,7 +23,7 @@
   <body>
 
     <header>
-      <h1 class="mainFont">PROJECT_RC (Real Clothes) - Style Guide</h1>
+      <h1 class="mainFont textcolor" style="font-weight:bold;">PROJECT_RC (Real Clothes) - Style Guide</h1>
 
       <p></p>
 
@@ -44,7 +44,7 @@
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
+      <h2 class="mainFont textcolor">Interactive Elements</h2>
       
 
       <section class="element">
@@ -63,10 +63,10 @@
         <h3>Navigation Link</h3>
         <nav>
           <ul  class="mainFont">
-          <li><a href="#">SHOP</a></li>
-          <li><a href="#">COLLECTIONS</a></li>
-          <li><a href="#">REVIEWS</a></li>
-          <li><a href="#">ABOUT</a></li>
+          <a href="#">SHOP</a><br>
+          <a href="#">COLLECTIONS</a><br>
+          <a href="#">REVIEWS</a><br>
+          <a href="#">ABOUT</a><br>
           </ul>
 
       </nav>
@@ -106,6 +106,7 @@
           <br>
           <input type="text" id="password" name="password" placeholder="Password"><br><br>
         </form> 
+
 
         <h4>Sample code:</h4>
         <code>&lt;form class="form_input"&gt; <br>
@@ -169,20 +170,26 @@
 
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
-      <h2>Text Elements</h2>
+      <h2 class="mainFont textcolor">Text Elements</h2>
 
       <section class="element">
         <br>
         <h3 class="mainFont" style="font-size: 30px;">Headings - Poppins</h3>
+        <h3 class="mainFont textcolor" style="font-size: 30px;">Headings - Poppins</h3>
+        <h3 class="mainFont" style="font-size: 25px;">Headings - Poppins</h3>
+        <h3 class="mainFont textcolor" style="font-size: 25px;">Headings - Poppins</h3>
+
       </section>
 
       <section class="element">
         <br>
         <h3 class="navfont">Navigation - Sen </h3>
+        <h3 class="navfont textcolor">Navigation - Sen </h3>
       </section>
 
       <section class="element">
         <h3 class="paragraph">Paragraph - Lato <br> </h3>
+        <h3 class="paragraph textcolor">Paragraph - Lato <br> </h3>
       </section>
 
       <section class="element">
@@ -215,7 +222,7 @@
 
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
-      <h2>Combined Elements</h2>
+      <h2 class="mainFont textcolor">Combined Elements</h2>
 
       <section class="element">
         <h3>Main Navigation</h3>
@@ -248,37 +255,50 @@
         <a href="product.html">Product Page</a> 
 
         
-        <table class="mainFont" style="font-size: 14px;">
-          <tr>
-            <td><div class="product"><a href="img/item1.png"><img src="img/item1.png" class="image-hover" height="225px"></a></div></td>
-            <td><div class="product"><a href="img/item2.png"><img src="img/item2.png" class="image-hover" height="225px"></a></div></td>
-            <td><div class="product"><a href="img/item3.png"><img src="img/item3.png" class="image-hover" height="225px"></a></div></td>
-          </tr>
-          <tr>
-            <td>Gold Pearl Choker Necklace</td>
-            <td>Trendy Solid stretch headband</td>
-            <td>Golden Rose Resin Earring</td>
-          </tr>
-          <tr>
-            <td>CA$84.00</td>
-            <td>CA$15.00</td>
-            <td>CA$35.00</td>
-          </tr>
-        </table>
-        
+
+        <div class="productBox mainFont">
+        <div class="productBox-item-product1">
+        <div class="productBox-item-product-img">
+         <a href="#"><img src="img/item1.png" class="image" alt="black hat"></a>
+          <div class="overlayRight">New Collection</div>
+          <div class="productTitle">Gold Pearl Choker Necklace<br>
+            CA$84.00
+          </div>
+           </div>
+           
+          </div>
+                
+         <div class="productBox-item-product2">
+         <div class="productBox-item-product-img">
+         <a href="#"><img src="img/item2.png" class="image" alt="black hat"></a>
+         <div class="overlayRight">New Collection</div>
+         <div class="productTitle">Trendy Solid stretch headband<br>
+          CA$15.00
+        </div>
+          </div></div>
+
+          <div class="productBox-item-product3">
+          <div class="productBox-item-product-img">
+          <a href="#"><img src="img/item3.png" class="image " alt="black hat"></a>
+            <div class="overlayRight">New Collection</div>
+            <div class="productTitle">Golden Rose Resin Earring<br>
+              CA$35.00
+            </div>
+            </div></div></div>
+
+
+       
       <h4>Sample code:</h4>
       <code>
-        &lt;table class="mainFont" style="font-size: 14px;"&gt;<br>
-        &lt;tr&gt;<br>
-        &lt;td&gt;&lt;img src="img/item1.png" height="225px"&gt;&lt;/td&gt;<br>
-        &lt;/tr&gt;<br>
-        &lt;tr&gt;<br>
-        &lt;td&gt;Gold Pearl Choker Necklace&lt;/td&gt;<br>
-        &lt;/tr&gt;<br>
-        &lt;tr&gt;<br>
-        &lt;td&gt;CA$84.00&lt;/td&gt;<br>
-        &lt;/tr&gt;<br>
-        &lt;/table&gt;<br>
+        &lt;div class="productBox mainFont"&gt;<br>
+        &lt;div class="productBox-item-product3"&gt;<br>
+        &lt;div class="productBox-item-product-img"&gt;<br>
+        &lt;a href="#"&gt;&lt;img src="img/item3.png" class="image" alt="black hat"&gt;&lt;/a&gt;<br>
+        &lt;div class="overlayRight"&gt;New Collection&lt;/div&gt;<br>
+        &lt;div class="productTitle">Golden Rose Resin Earring&lt;br&gt;<br>
+         CA$35.00<br>
+         &lt;/div&gt;<br>
+         &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;<br>
       </code>
 
       </section>
@@ -287,6 +307,8 @@
         <h3>Payment Form</h3>
         <a href="cart.html">Checkout Page</a> 
 <br>
+
+
         <form class="navfont form_input" >
           <ul>
             <label class="container">Credit or Debit Card<input type="radio" checked="checked" name="payment" value="card">
@@ -364,7 +386,7 @@
     
     <!-- BRANDING COMPONENTS SECTION // -->
     <section id="branding">
-      <h2>Branding Components</h2>
+      <h2 class="mainFont textcolor">Branding Components</h2>
       <section class="element"> </section>
 
       <p class="navfont">
@@ -440,10 +462,10 @@
       <h3>Color Palette</h3> </section>
       <div class="palette" style="background:#f1f1f1"></div>
        <div class="palette" style="background:#dfdee4"></div>
-       <div class="palette" style="background:#d7d9d8"></div>
        <div class="palette" style="background:#e0dad7"></div>
-       <div class="palette" style="background:#c2c0c1"></div>
-       <div class="palette" style="background:#afb5b8"></div>
+       <div class="palette" style="background:#c57648"></div>
+       <div class="palette" style="background:#779c92"></div>
+       <div class="palette" style="background:#786062"></div>
        <div class="palette" style="background:#5c5c5c"></div>
        
 
@@ -453,6 +475,7 @@
        <h3>Imagery</h3> </section>
        <p class="mainFont">Icons</p>
        <img src="img/icons.png" style="width: 60%;">
+       <img src="img/moodboard1.png" style="width: 60%;">
        <p class="mainFont">Moodboard</p>
        <img src="img/products.jpg" style="width: 60%;"><br><br>
        <img src="img/imagery.png" style="width: 60%;">
