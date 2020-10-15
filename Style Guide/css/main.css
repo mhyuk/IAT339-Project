@@ -445,3 +445,66 @@ span.price {
   float: right;
   color: grey;
 }
+
+/*
+  cart details  https://www.youtube.com/watch?v=oXrlgOEiy6o   https://codepen.io/theresa-e/pen/BOBQxR  -------------------
+*/
+
+.cart-page{
+  margin: 100px 10%;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-info{
+  display: flex;
+  flex-wrap: wrap;
+}
+th{
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #c57648;
+  font-weight: normal;
+}
+td{
+  padding: 10px 5px;
+}
+td input{
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+}
+td a{
+  color: #ff523b;
+  font-size: 12px;
+}
+td img{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table{
+  border-top: 5px solid #84a98c;
+  width: 100%;
+  max-width: 600px;
+}
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+
+.bottom-line{
+  margin: 80px auto;
+  border-top: 5px solid #84a98c;
+  width: 100%;
+  max-width: 1300px;
+}

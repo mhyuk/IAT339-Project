@@ -525,6 +525,184 @@
 
       </section> -->
 
+
+
+<!-- start of cart - Sunita-->
+<section class="element">
+  <h3>Checkout Cart</h3>
+
+  <h4>CSS selector:</h4>
+  <p>.cart-page</p>
+  <p>.cart-info</p>
+  <p>.total-price</p>
+  <p>.bottom-line</p>
+
+
+<h4>Sample code:</h4>
+
+<code>&lt;div class="small-container cart-page"&gt;</code>
+  <code>&lt;table&gt;</code>
+    <code>&lt;tr&gt;</code>
+      <code>&lt;th&gt;Product&lt;/th&gt;</code>
+      <code>&lt;th&gt;Quantity&lt;/th&gt;</code>
+      <code>&lt;th&gt;Subtotal&lt;/th&gt;</code>
+    <code>&lt;/tr&gt;</code>
+
+    <code>&lt;tr&gt;</code>
+      <code>&lt;td&gt;</code>
+        <code>&lt;div class="cart-info"&gt;</code>
+          <code>&lt;img src="img/hat.png" alt="A black hat"&gt;</code>
+          <code>&lt;div&gt;</code>
+            <code>&lt;p&gt;Black Panama Hat&lt;/p&gt;</code>
+            <code>&lt;small&gt;Price: $34.00&lt;/small&gt;</code>
+            <code>&lt;br&gt;</code>
+            <code>&lt;a href=""&gt;Remove&lt;/a&gt;</code>
+          <code>&lt;/div&gt;</code>
+      <code>&lt;/div&gt;</code>
+      <code>&lt;/td&gt;</code>
+      <code>&lt;td&gt;&lt;input type="number" value="1"&gt;&lt;/td&gt;</code>
+      <code>&lt;td&gt;$34.00&lt;/td&gt;</code>
+    <code>&lt;/tr&gt;</code>
+
+    <code>&lt;tr&gt;</code>
+      <code>&lt;td&gt;</code>
+        <code>&lt;div class="cart-info"&gt;</code>
+        <code>&lt;img src="img/greenCoat.png" alt="A green coat"&gt;</code>
+          <code>&lt;div&gt;</code>
+            <code>&lt;p&gt;Emerald Green Blazer&lt;/p&gt;</code>
+            <code>&lt;small&gt;Price: $50.99&lt;/small&gt;</code>
+            <code>&lt;br&gt;</code>
+            <code>&lt;a href=""&gt;Remove&lt;/a&gt;</code>
+          <code>&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+      <code>&lt;/td&gt;</code>
+      <code>&lt;td&gt;&lt;input type="number" value="1"&gt;&lt;/td&gt;</code>
+      <code>&lt;td&gt;$50.99&lt;/td&gt;</code>
+    <code>&lt;/tr&gt;</code>
+
+    <code>&lt;tr&gt;</code>
+      <code>&lt;td&gt;</code>
+        <code>&lt;div class="cart-info"&gt;</code>
+          <code>&lt;img src="img/eyeglass.png" alt="eyeglass"&gt;</code>
+          <code>&lt;div&gt;</code>
+            <code>&lt;p&gt;Lenseless Eyeglasses&lt;/p&gt;</code>
+            <code>&lt;small&gt;Price: $20.00&lt;/small&gt;</code>
+            <code>&lt;br&gt;</code>
+            <code>&lt;a href=""&gt;Remove&lt;/a&gt;</code>
+          <code>&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+      <code>&lt;/td&gt;</code>
+      <code>&lt;td&gt;&lt;input type="number" value="1"&gt;&lt;/td&gt;</code>
+      <code>&lt;td&gt;$20.00&lt;/t&gt;</code>
+    <code>&lt;/tr&gt;</code>
+  <code>&lt;/table&gt;</code>
+
+  <code>&lt;div class="total-price"&gt;</code>
+    <code>&lt;table&gt;</code>
+      <code>&lt;tr&gt;</code>
+        <code>&lt;td&gt;Subtotal&lt;/td&gt;</code>
+        <code>&lt;td&gt;$104.99&lt;/td&gt;</code>
+      <code>&lt;/tr&gt;</code>
+      <code>&lt;tr&gt;</code>
+        <code>&lt;td&gt;Tax&lt;/td&gt;</code>
+        <code>&lt;td&gt;$35.00&lt;/td&gt;</code>
+      <code>&lt;/tr&gt;</code>
+      <code>&lt;tr&gt;</code>
+        <code>&lt;td&gt;Total&lt;/td&gt;</code>
+        <code>&lt;td&gt;$139.99&lt;/td&gt;</code>
+      <code>&lt;/tr&gt;</code>
+    <code>&lt;/table&gt;</code>
+
+  <code>&lt;/div&gt;</code>
+  <code>&lt;div class="bottom-line"&gt;&lt;/div&gt;</code>
+<code>&lt;/div&gt;</code>
+
+
+<h4>Rendered element:</h4>
+
+<!--CART - Reference-Watched this tutorial: https://www.youtube.com/watch?v=oXrlgOEiy6o  -->
+  <div class="small-container cart-page">
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="img/hat.png" alt="A black hat">
+            <div>
+              <p>Black Panama Hat</p>
+              <small>Price: $34.00</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$34.00</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="img/greenCoat.png" alt="A green coat">
+            <div>
+              <p>Emerald Green Blazer</p>
+              <small>Price: $50.99</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$50.99</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="img/eyeglass.png" alt="eyeglass">
+            <div>
+              <p>Lenseless Eyeglasses</p>
+              <small>Price: $20.00</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$20.00</td>
+      </tr>
+
+    </table>
+
+    <div class="total-price">
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td>$104.99</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td>$35.00</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>$139.99</td>
+        </tr>
+      </table>
+
+    </div>
+    <div class="bottom-line"></div>
+  </div>
+
+
+</section>
+
+<!-- end of cart - Sunita-->
       <section class="element">
         <h3>Checkout Cart</h3>
         <a href="cart.html">Checkout Page</a>
