@@ -432,17 +432,14 @@
           <div class="col-50">
             <h3>Payment</h3>
 
-            <div class="radio-wrapper">
-              <div class="radio-option">
-                <input type="radio" name="input-radio" id="option1">
-                <label for="optionA">Credit</label>
-              </div>
-
-              <div class="radio-option">
-                <input type="radio" name="input-radio" id="option2">
-                <label for="optionB">PayPal</label>
-              </div>
-          </div>
+            <form>
+              <label class="container">Credit<input type="radio" checked="checked" name="type" value="pink">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">PayPal<input type="radio" name="type" value="white">
+                <span class="checkmark"></span>
+              </label>
+            </form>
 
 
             <label for="cname">Name on Card</label>
@@ -467,7 +464,7 @@
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <input type="submit" value="Continue to checkout" class="btn-pay">
+        <input type="submit" value="CONTINUE TO CHECKOUT" class="button button1">
       </form>
     </div>
   </div>
