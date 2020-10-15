@@ -276,10 +276,10 @@ width: 95%;
 
 }
 
-/*
+
 .cart td {
   padding-right: 5%;
-} */
+} 
 
 /*
   BRANDING COMPONENTS -------------------
@@ -467,7 +467,7 @@ th{
   text-align: left;
   padding: 5px;
   color: #fff;
-  background: #c57648;
+  background: #779c92;
   font-weight: normal;
 }
 td{
@@ -493,7 +493,7 @@ td img{
   justify-content: flex-end;
 }
 .total-price table{
-  border-top: 5px solid #84a98c;
+  border-top: 5px solid #e0dad7;
   width: 100%;
   max-width: 600px;
 }
@@ -506,7 +506,7 @@ th:last-child{
 
 .bottom-line{
   margin: 80px auto;
-  border-top: 5px solid #84a98c;
+  border-top: 5px solid #e0dad7;
   width: 100%;
   max-width: 1300px;
 }
