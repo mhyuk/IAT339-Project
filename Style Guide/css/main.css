@@ -370,12 +370,6 @@ width: 95%;
 
 }
 
-<<<<<<< HEAD
-.icon{
-  width: 1.1em;
-  margin-bottom:-3px;
-}
-=======
 
 
 /*  NEWLY ADDED by Sunita: payment form   */
@@ -517,4 +511,8 @@ th:last-child{
   width: 100%;
   max-width: 1300px;
 }
->>>>>>> master
+
+.icon{
+  width: 1.1em;
+  margin-bottom:-3px;
+}
