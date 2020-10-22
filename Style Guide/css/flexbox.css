@@ -94,8 +94,9 @@
 	*/
 	-webkit-justify-content: space-around;
 	-ms-justify-content: space-around;
-	justify-content: center;
+	justify-content: space-around;
 	flex-direction: row;
+
 
 }
 
