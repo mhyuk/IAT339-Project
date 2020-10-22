@@ -20,10 +20,19 @@
 
 .container .banner{
   height: 30em;
-  background-color: rgb(216, 216, 216);
   flex-basis: 15em;
   flex-grow:1;
-  
+ 
+}
+
+.container .bannerImg{
+ display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 30em;
+  background-image: url('banner2.jpg');
 }
 
 .container div {
@@ -52,13 +61,31 @@
   height: 0;
 }
 
-.container .hotitem{
+.container .hotitem1{
   height: 45em;
-  background-color: rgb(163, 112, 112);
-  flex-basis: 50em;
-  margin:0.5em;
+  flex-basis: 40em;
+  margin:1em;
   flex-grow:1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-size: 100% 100%;
+  width: 100%;
+  background-image: url('hotitem1.png');
+  
+}
 
+.container .hotitem2{
+  height: 45em;
+  flex-basis: 40em;
+  margin:1em;
+  flex-grow:1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-size: 100% 100%;
+  width: 100%;
+  background-image: url('hotitem2.jpg');
 }
 
 .container .recommended{
@@ -67,6 +94,69 @@
   flex-basis: 20em;
   margin:0.5em;
   flex-grow:1;
+}
+
+.container .recommended1{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-size: 100% 100%;
+  width: 100%;
+  background-image: url('item1.jpg');
+}
+
+.container .recommended2{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-size: 100% 100%;
+  width: 100%;
+  background-image: url('item2.jpg');
+}
+
+.container .recommended3{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-size: 100% 100%;
+  width: 100%;
+  background-image: url('item4.jpg');
+}
+
+.container .recommended4{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-size: 100% 100%;
+  width: 100%;
+  background-image: url('item3.jpg');
+}
+
+@media only screen and (max-width: 92em) {
+  .container .bannerImg {
+    background-image: url('banner3.jpg');
+  }
+  .container .hotitem1{
+    background-image: url('hotitem1_2.jpg');
+  }
+  .container .hotitem2{
+    background-image: url('hotitem2_2.jpg');
+  }
+  .container .recommended4{
+    background-image: url('item3_1.jpg');
+  }
+}
+
+@media only screen and (max-width: 70em) {
+  .container .bannerImg {
+    background-image: url('banner4.jpg');
+  }
+  .container .hotitem2{
+    background-image: url('hotitem2.jpg');
+  }
+  .container .recommended4{
+    background-image: url('item3.jpg');
+  }
 }
 
 /* DETAIL PAGE FLEXBOX */
@@ -92,11 +182,20 @@
 .container .photoDetail{
   height: 40em;
   max-width:35em;
-  background-color: rgb(112, 163, 123);
+  background-color: #779c92;
   flex-basis: 50em;
   flex-grow:1;
 
 
+}
+
+.container .productPhoto{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-size: 100% 100%;
+  width: 100%;
+  background-image: url('product.jpg');
 }
 
 .container .productDetail{
