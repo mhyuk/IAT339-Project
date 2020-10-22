@@ -1,0 +1,129 @@
+/* CSS for Flexbox*/
+
+/* HOMEPAGE FLEXBOX */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  max-width: 110em;
+
+}
+
+.container .block {
+  height: 200px;
+  flex-basis: 15em;
+  flex-grow:1;
+}
+
+.container .banner{
+  height: 30em;
+  background-color: rgb(216, 216, 216);
+  flex-basis: 15em;
+  flex-grow:1;
+  
+}
+
+.container div {
+  background-color: white;
+  padding: 0.1em;
+  
+  /*border: 1em solid black;*/
+}
+
+.container .btn {
+  position: absolute;
+  top: 85%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.container .hotitem{
+  height: 45em;
+  background-color: rgb(163, 112, 112);
+  flex-basis: 50em;
+  margin:0.5em;
+  flex-grow:1;
+
+}
+
+.container .recommended{
+  height: 35em;
+  background-color: rgb(163, 112, 112);
+  flex-basis: 20em;
+  margin:0.5em;
+  flex-grow:1;
+}
+
+/* DETAIL PAGE FLEXBOX */
+
+.container .block1{
+  height: 45em;
+  background-color: rgb(255, 255, 255);
+  flex-basis: 50em;
+  margin:1em;
+  flex-grow:1;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container .block2{
+  height: 45em;
+  background-color: rgb(255, 255, 255);
+  flex-basis: 50em;
+  margin:1em;
+
+}
+.container .photoDetail{
+  height: 40em;
+  max-width:35em;
+  background-color: rgb(112, 163, 123);
+  flex-basis: 50em;
+  flex-grow:1;
+
+
+}
+
+.container .productDetail{
+  height: auto;
+  max-width:35em;
+  background-color: rgb(255, 255, 255);
+  flex-basis: 50em;
+  flex-grow:1;
+  margin-left:1em;
+
+}
+
+.container .review{
+  height: 10em;
+  max-width:35em;
+  background-color: rgb(255, 255, 255);
+  flex-basis: 50em;
+  flex-grow:1;
+  margin:1em;
+  box-shadow: 4px 4px 4px 4px #888888;
+
+}
+
+.checked {
+  color: #779C92;
+}
+
+.unchecked {
+  color: #D2D2D2;
+}
