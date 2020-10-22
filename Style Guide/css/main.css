@@ -2,7 +2,10 @@
   STYLE GUIDE STYLING
   Default styling for the style guide
 */
+
+
 body {
+  margin: 0;
   font-family: sans-serif;
   padding: 2rem;
 }
