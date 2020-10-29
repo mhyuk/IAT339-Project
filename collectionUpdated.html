@@ -10,8 +10,10 @@
 
 		<title>Collection Page_P2</title>
 
-		<link rel="stylesheet" href="css/collectionUpdated.css">
-    <link rel="stylesheet" href="css/flexbox.css">
+		<link href="Style Guide/css/main.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="Style Guide/css/collectionUpdated.css">
+    <link rel="stylesheet" href="Style Guide/css/flexbox.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
@@ -21,24 +23,37 @@
 		<!--
 			By creating a separate stylesheet for our grid styling, we can take and use the same grid structure on different websites if we should so choose.
 		-->
-		<link rel="stylesheet" href="css/flexbox.css">
+
 
 	</head>
 
 	<body>
 
-		<div style="float:left; font-size: 1.5em; font-weight: bold;" class="mainFont">PROJECT_RC</div>
-		 <nav style="float:right;">
-		<div class="navbar">
-			<a href="product.html">SHOP</a>
-			<a href="collection.html">COLLECTIONS</a>
-			<a href="#">REVIEWS</a>
-			<a href="about.html">ABOUT</a>
-			<a href="#"><img src="img/account.png" style="margin-left: 1em;" class="icon" alt="Account"></a>
-			<a href="cart.html"><img src="img/cart.png" style="margin-bottom: -0px;" class="icon" alt="Cart"></a>
-		</div>
-	</nav>
+		<div style="float:left; font-size: 1.5em; font-weight: bold;" class="mainFont"><a href="index.html">PROJECT_RC</a></div>
 
+    <nav style="float:right;">
+        <ul class="navbar" id="MenuItems">
+          <li><a class="active" href="index.html">HOME</a></li>
+          <li><a href="product.html">SHOP</a></li>
+          <li><a href="collectionUpdated.html">COLLECTIONS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          </ul>
+          <a href="#"><img src="Style Guide/img/account.png" style="margin-left: 1em;" class="icon" alt="Account"></a>
+          <a href="cart.html"><img src="Style Guide/img/cart.png" style="margin-bottom: -0px;" class="icon" alt="Cart"></a>
+
+        <div class="menu-btn menu-icon" onclick="menutoggle()">
+          <div class="menu-btn_burger"></div>
+      </nav>
+<div style="clear: both;"></div><br>
+    <section class="element"></section>
+
+
+<div class="container"><a class="button button1 btn" href="product.html" rel="shop now">SHOP NOW</a>
+  <div class="banner"> <div class="bannerImg">
+    </div>
+    </div>
+</div>
+<!--
 	<section id="banner">
 		<img src="img/home.png" class="logo">
 		<div class="banner-text">
@@ -48,7 +63,7 @@
 					<a href="#">Subscribe</a>
 				</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- skipped the side navigation here-->
 	<!--<div id="slideNav"></div>  -->
 	<!--<section  id="features"></section>  -->
@@ -65,28 +80,28 @@
 
 		<div class="seasonal-box">
 			<div class="single-season">
-				<img src="img/pinkShirt.jpg">
+				<img src="Style Guide/img/pinkShirt.jpg">
 				<div class="overlay"></div>
 				<div class="season-name">
 					<p>Spring Season</p>
 				</div>
 			</div>
 			<div class="single-season">
-				<img src="img/grayShirt.jpg">
+				<img src="Style Guide/img/grayShirt.jpg">
 				<div class="overlay"></div>
 				<div class="season-name">
 					<p>Summer Season</p>
 				</div>
 			</div>
 			<div class="single-season">
-				<img src="img/sweater.jpg">
+				<img src="Style Guide/img/sweater.jpg">
 				<div class="overlay"></div>
 				<div class="season-name">
 					<p>Fall Season</p>
 				</div>
 			</div>
 			<div class="single-season">
-				<img src="img/pinkShirt.jpg">
+				<img src="Style Guide/img/pinkShirt.jpg">
 				<div class="overlay"></div>
 				<div class="season-name">
 					<p>Winter Season</p>
@@ -110,7 +125,7 @@
 							repellat animi, fugit architecto voluptatum odit et!</p>
 					</div>
 					<div class="lookBk-img">
-						<img src="img/cover2.jpg">
+						<img src="Style Guide/img/cover2.jpg">
 					</div>
 				</div>
 
@@ -122,7 +137,7 @@
 							repellat animi, fugit architecto voluptatum odit et!</p>
 					</div>
 					<div class="lookBk-img">
-						<img src="img/cover2.jpg">
+						<img src="Style Guide/img/cover2.jpg">
 					</div>
 				</div>
 
@@ -134,7 +149,7 @@
 							repellat animi, fugit architecto voluptatum odit et!</p>
 					</div>
 					<div class="lookBk-img">
-						<img src="img/cover2.jpg">
+						<img src="Style Guide/img/cover2.jpg">
 					</div>
 				</div>
 
@@ -146,7 +161,7 @@
 							repellat animi, fugit architecto voluptatum odit et!</p>
 					</div>
 					<div class="lookBk-img">
-						<img src="img/cover2.jpg">
+						<img src="Style Guide/img/cover2.jpg">
 					</div>
 				</div>
 
