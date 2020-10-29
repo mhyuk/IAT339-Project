@@ -1,7 +1,8 @@
 /* CSS for Flexbox*/
 
+
 nav li {
-  float:left; 
+  float:left;
   margin-left: 0.5em;
   margin-top: -0.4em;
   flex: auto;
@@ -59,7 +60,7 @@ nav ul{
 
 .container div {
   padding: 0.1em;
-  
+
   /* border: 1em solid black; */
 }
 
@@ -95,7 +96,7 @@ nav ul{
   background-image: url('hotitem1.png');
   cursor: pointer;
 
-  
+
 }
 
 .container .hotitem2{
@@ -231,7 +232,7 @@ nav ul{
 
 
 
-/* Hamburger Menu 
+/* Hamburger Menu
    Tutorial from https://www.youtube.com/watch?v=dIyVTjJAkLw&ab_channel=codeSTACKr */
 
    .menu-btn{
@@ -270,7 +271,7 @@ nav ul{
      transform: translateY(-8px);
    }
    .menu-btn_burger::after{
-    transform: translateY(8px); 
+    transform: translateY(8px);
   }
 
   /* ANIMATION */
@@ -296,9 +297,9 @@ nav ul{
     display: none;
   }
 
-  
+
   /* Product Page */
-  
+
   .container .products{
     max-height: 100%;
     width:100%;
@@ -312,9 +313,9 @@ nav ul{
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start;
-    
+
     justify-content: space-around;
-   
+
   }
 
   .container .product1{
@@ -339,10 +340,10 @@ nav ul{
     align-items: center;
     max-width: 8em;
     float: left;
-    margin-top: 3vw; 
+    margin-top: 3vw;
     font-size: 1.1em;
     margin-right:5em;
-    
+
 }
 
 .productTitle{
@@ -367,7 +368,7 @@ nav ul{
       background-image: url('item3_1.jpg');
     }
   }
-  
+
   @media only screen and (max-width: 70em) {
     .container .bannerImg {
       background-image: url('banner4.jpg');
@@ -380,32 +381,32 @@ nav ul{
     }
     .container .hotitem1{
       background-image: url('hotitem1.png');
-  
+
     }
-   
+
   }
-  
-  
-  
-  
+
+
+
+
   @media only screen and (max-width: 50em) {
-  
+
   .container .banner{
     height: 25em;
     max-height: 25em;
-   
+
   }
-  
+
   .container .hotitem1{
     height: 35em;
     max-height: 35em;
   }
-  
+
   .container .hotitem2{
     height: 35em;
     max-height: 35em;
   }
-  
+
   .container .recommended1{
     height: 60em;
     max-height: 60em;
@@ -460,29 +461,29 @@ nav ul{
     margin-left: 5em;
   }
 
-  
+
 
   }
-  
-  
+
+
   @media only screen and (max-width: 40em) {
-  
+
     .container .banner{
       height: 20em;
       max-height: 20em;
-     
+
     }
-  
+
     .container .hotitem1{
       height: 30em;
       max-height: 30em;
     }
-    
+
     .container .hotitem2{
       height: 30em;
       max-height: 30em;
     }
-  
+
     .container .recommended1{
       max-height: 50em;
     }
@@ -499,29 +500,29 @@ nav ul{
     .container .product1{
       margin-left: 2em;
     }
-   
-     
+
+
     }
-  
-    
+
+
   @media only screen and (max-width: 30em) {
-  
+
     .container .banner{
       height: 15em;
       max-height: 15em;
-     
+
     }
-  
+
     .container .hotitem1{
       height: 20em;
       max-height: 20em;
     }
-    
+
     .container .hotitem2{
       height: 20em;
       max-height: 20em;
     }
-     
+
     .container .recommended1{
       max-height: 40em;
     }
@@ -560,20 +561,20 @@ nav ul{
       max-height:20em;
     }
     }
-  
+
     @media only screen and (max-width: 25em) {
-  
-    
+
+
       .container .hotitem1{
         height: 15em;
         max-height: 15em;
       }
-      
+
       .container .hotitem2{
         height: 15em;
         max-height: 15em;
       }
-  
+
       .container .recommended1{
         max-height: 30em;
       }
@@ -596,21 +597,21 @@ nav ul{
 
       .productNav{
         margin-right:7em;
-    
+
       }
       .container .product1{
         margin-left: -6em;
       }
-      
+
       }
 
 
       @media only screen and (max-width: 20em) {
-  
+
         .container .product1{
           margin-left: -6em;
         }
-        
+
         .container .products img{
           width:20em;
         }
