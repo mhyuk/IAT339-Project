@@ -10,20 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   </head>
   <body>
     <div style="float:left; font-size: 1.5em; font-weight: bold;" class="mainFont"><a href="index.html">PROJECT_RC</a></div>
 
     <nav style="float:right;">
-        <div class="navbar">
-          <a class="active" href="index.html">HOME</a>
-          <a href="product.html">SHOP</a>
-          <a href="collection.html">COLLECTIONS</a>
-          <a href="about.html">ABOUT</a>
+        <ul class="navbar" id="MenuItems">
+          <li><a class="active" href="index.html">HOME</a></li>
+          <li><a href="product.html">SHOP</a></li>
+          <li><a href="collection.html">COLLECTIONS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          </ul>
           <a href="#"><img src="Style Guide/img/account.png" style="margin-left: 1em;" class="icon" alt="Account"></a>
           <a href="cart.html"><img src="Style Guide/img/cart.png" style="margin-bottom: -0px;" class="icon" alt="Cart"></a>
-        </div>
+        
+        <div class="menu-btn menu-icon" onclick="menutoggle()">
+          <div class="menu-btn_burger"></div>
       </nav>
 <div style="clear: both;"></div><br>
     <section class="element"></section>
@@ -53,6 +55,7 @@
       <div class="recommended recommended4 image" onclick="window.location='product.html';"></div>
     </div>
 
+    <script src="main.js"></script>
 
   </body>
   <footer>

@@ -1,5 +1,22 @@
 /* CSS for Flexbox*/
 
+nav li {
+  float:left; 
+  margin-left: 0.5em;
+  margin-top: -0.4em;
+  flex: auto;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+.icon{
+  width: 1.6em;
+  margin-top:0.7em;
+  margin-left: 0.5em;
+}
+
 /* HOMEPAGE FLEXBOX */
 .container {
   display: flex;
@@ -9,6 +26,7 @@
   align-items: center;
   align-content: flex-start;
   max-width: 110em;
+  padding: 2%;
 
 }
 
@@ -20,9 +38,11 @@
 
 .container .banner{
   height: 30em;
+  max-height: 30em;
   flex-basis: 15em;
   flex-grow:1;
- 
+  z-index: -1;
+  position: relative;
 }
 
 .container .bannerImg{
@@ -31,8 +51,10 @@
   align-items: center;
   background-size: 100% 100%;
   width: 100%;
-  height: 30em;
+  height: 100%;
   background-image: url('banner2.jpg');
+  z-index: -1;
+  position: relative;
 }
 
 .container div {
@@ -138,32 +160,6 @@
   background-image: url('item3.jpg');
 }
 
-@media only screen and (max-width: 92em) {
-  .container .bannerImg {
-    background-image: url('banner3.jpg');
-  }
-  .container .hotitem1{
-    background-image: url('hotitem1_2.jpg');
-  }
-  .container .hotitem2{
-    background-image: url('hotitem2_2.jpg');
-  }
-  .container .recommended4{
-    background-image: url('item3_1.jpg');
-  }
-}
-
-@media only screen and (max-width: 70em) {
-  .container .bannerImg {
-    background-image: url('banner4.jpg');
-  }
-  .container .hotitem2{
-    background-image: url('hotitem2.jpg');
-  }
-  .container .recommended4{
-    background-image: url('item3.jpg');
-  }
-}
 
 /* DETAIL PAGE FLEXBOX */
 
@@ -232,3 +228,268 @@
 .unchecked {
   color: #D2D2D2;
 }
+
+
+
+/* Hamburger Menu 
+   Tutorial from https://www.youtube.com/watch?v=dIyVTjJAkLw&ab_channel=codeSTACKr */
+
+   .menu-btn{
+     margin-top: 0.2em;
+     position: relative;
+     display:flex;
+     justify-content: center;
+     align-items:center;
+     width:40px;
+     height:40px;
+     cursor:pointer;
+     transition: all .5s ease-in-out;
+     float: right;
+   }
+
+   .menu-btn_burger{
+     width: 25px;
+     height: 3px;
+     background :#000;
+     border-radius: 5px;
+     transition: all .5s ease-in-out;
+   }
+
+   .menu-btn_burger::before,
+   .menu-btn_burger::after{
+    content:'';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background :#000;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+   }
+
+   .menu-btn_burger::before{
+     transform: translateY(-8px);
+   }
+   .menu-btn_burger::after{
+    transform: translateY(8px); 
+  }
+
+  /* ANIMATION */
+
+  .menu-btn.open .menu-btn_burger{
+    transform: translate(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .menu-btn.open .menu-btn_burger::before{
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .menu-btn.open .menu-btn_burger::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  .menu-icon{
+    margin-left:1em;
+    display: none;
+  }
+
+  
+
+
+  /* Media Query */
+
+  @media only screen and (max-width: 92em) {
+    .container .bannerImg {
+      background-image: url('banner3.jpg');
+    }
+    .container .hotitem1{
+      background-image: url('hotitem1_2.jpg');
+    }
+    .container .hotitem2{
+      background-image: url('hotitem2_2.jpg');
+    }
+    .container .recommended4{
+      background-image: url('item3_1.jpg');
+    }
+  }
+  
+  @media only screen and (max-width: 70em) {
+    .container .bannerImg {
+      background-image: url('banner4.jpg');
+    }
+    .container .hotitem2{
+      background-image: url('hotitem2.jpg');
+    }
+    .container .recommended4{
+      background-image: url('item3.jpg');
+    }
+    .container .hotitem1{
+      background-image: url('hotitem1.png');
+  
+    }
+   
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 50em) {
+  
+  .container .banner{
+    height: 25em;
+    max-height: 25em;
+   
+  }
+  
+  .container .hotitem1{
+    height: 35em;
+    max-height: 35em;
+  }
+  
+  .container .hotitem2{
+    height: 35em;
+    max-height: 35em;
+  }
+  
+  .container .recommended1{
+    height: 60em;
+    max-height: 60em;
+  }
+  .container .recommended2{
+    height: 60em;
+    max-height: 60em;
+  }
+  .container .recommended3{
+    height: 60em;
+    max-height: 60em;
+  }
+  .container .recommended4{
+    height: 60em;
+    max-height: 60em;
+  }
+
+  nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    margin-left: -1em;
+  }
+
+  nav ul li{
+    display: block;
+    margin-right:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a{
+    color: #fff !important;
+  }
+
+  .menu-icon{
+    display: block;
+    margin-top: 1.5em;
+  }
+
+
+  }
+  
+  
+  @media only screen and (max-width: 40em) {
+  
+    .container .banner{
+      height: 20em;
+      max-height: 20em;
+     
+    }
+  
+    .container .hotitem1{
+      height: 30em;
+      max-height: 30em;
+    }
+    
+    .container .hotitem2{
+      height: 30em;
+      max-height: 30em;
+    }
+  
+    .container .recommended1{
+      max-height: 50em;
+    }
+    .container .recommended2{
+      max-height: 50em;
+    }
+    .container .recommended3{
+      max-height: 50em;
+    }
+    .container .recommended4{
+      max-height: 50em;
+    }
+     
+    }
+  
+    
+  @media only screen and (max-width: 30em) {
+  
+    .container .banner{
+      height: 15em;
+      max-height: 15em;
+     
+    }
+  
+    .container .hotitem1{
+      height: 20em;
+      max-height: 20em;
+    }
+    
+    .container .hotitem2{
+      height: 20em;
+      max-height: 20em;
+    }
+     
+    .container .recommended1{
+      max-height: 40em;
+    }
+    .container .recommended2{
+      max-height: 40em;
+    }
+    .container .recommended3{
+      max-height: 40em;
+    }
+    .container .recommended4{
+      max-height: 40em;
+    }
+    }
+  
+    @media only screen and (max-width: 25em) {
+  
+    
+      .container .hotitem1{
+        height: 15em;
+        max-height: 15em;
+      }
+      
+      .container .hotitem2{
+        height: 15em;
+        max-height: 15em;
+      }
+  
+      .container .recommended1{
+        max-height: 30em;
+      }
+      .container .recommended2{
+        max-height: 30em;
+      }
+      .container .recommended3{
+        max-height: 30em;
+      }
+      .container .recommended4{
+        max-height: 30em;
+      }
+       
+      }
