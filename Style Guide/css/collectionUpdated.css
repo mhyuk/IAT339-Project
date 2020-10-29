@@ -44,9 +44,12 @@ p, ol, ul {
 
 /*   NEW CODE */
 
+#banner a:hover{
+	color: white;
+  }
 
 #banner{
-	background: url(../img/coverB.png);
+	background: url(../img/coverA.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
