@@ -12,9 +12,9 @@ nav ul{
 }
 
 .icon{
-  width: 1.6em;
-  margin-top:0.7em;
-  margin-left: 0.5em;
+  width: 1.6em !important;
+  margin-top:0.7em !important;
+  margin-left: 0.5em !important;
 }
 
 /* HOMEPAGE FLEXBOX */
@@ -58,10 +58,9 @@ nav ul{
 }
 
 .container div {
-  background-color: white;
   padding: 0.1em;
   
-  /*border: 1em solid black;*/
+  /* border: 1em solid black; */
 }
 
 .container .btn {
@@ -166,7 +165,7 @@ nav ul{
 .container .block1{
   height: 45em;
   background-color: rgb(255, 255, 255);
-  flex-basis: 50em;
+  flex-basis: 35em;
   margin:1em;
   flex-grow:1;
   display: flex;
@@ -177,7 +176,7 @@ nav ul{
 .container .block2{
   height: 45em;
   background-color: rgb(255, 255, 255);
-  flex-basis: 50em;
+  flex-basis: 40em;
   margin:1em;
 
 }
@@ -185,7 +184,7 @@ nav ul{
   height: 40em;
   max-width:35em;
   background-color: #779c92;
-  flex-basis: 50em;
+  flex-basis: 20em;
   flex-grow:1;
 
 
@@ -204,20 +203,21 @@ nav ul{
   height: auto;
   max-width:35em;
   background-color: rgb(255, 255, 255);
-  flex-basis: 50em;
+  flex-basis: 20em;
   flex-grow:1;
   margin-left:1em;
 
 }
 
 .container .review{
-  height: 10em;
+  height: auto;
   max-width:35em;
   background-color: rgb(255, 255, 255);
-  flex-basis: 50em;
+  flex-basis: 20em;
   flex-grow:1;
   margin:1em;
   box-shadow: 4px 4px 4px 4px #888888;
+  padding-bottom: 2em;
 
 }
 
@@ -235,8 +235,8 @@ nav ul{
    Tutorial from https://www.youtube.com/watch?v=dIyVTjJAkLw&ab_channel=codeSTACKr */
 
    .menu-btn{
-     margin-top: 0.2em;
-     position: relative;
+    margin-top: 0.2em;
+    position: relative;
      display:flex;
      justify-content: center;
      align-items:center;
@@ -289,13 +289,67 @@ nav ul{
     transform: rotate(-45deg) translate(35px, 35px);
   }
 
+  /* Hamburger tutorial from https://www.youtube.com/watch?v=yQimoqo0-7g&ab_channel=EasyTutorials */
+
   .menu-icon{
     margin-left:1em;
     display: none;
   }
 
   
+  /* Product Page */
+  
+  .container .products{
+    max-height: 100%;
+    width:100%;
+    max-width: 110em;
+    flex-basis: 15em;
+    flex-grow:1;
+    float: right;
 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    
+    justify-content: space-around;
+   
+  }
+
+  .container .product1{
+    height: 25em;
+    width: 25em;
+    margin: 0.5em;
+    display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   margin-bottom:3em;
+  }
+  .container .products img{
+    width:22em;
+  }
+
+  .productNav{
+    height: auto;
+    flex-basis: 5em;
+    flex-grow:1;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    max-width: 8em;
+    float: left;
+    margin-top: 3vw; 
+    font-size: 1.1em;
+    margin-right:5em;
+    
+}
+
+.productTitle{
+  text-align: left;
+  margin-left: -0.2em !important;
+
+}
 
   /* Media Query */
 
@@ -376,8 +430,8 @@ nav ul{
     background: #333;
     width: 100%;
     overflow: hidden;
-    transition: max-height 0.5s;
-    margin-left: -1em;
+    transition: max-height 0.8s;
+    margin-left: -1.5em;
   }
 
   nav ul li{
@@ -396,6 +450,17 @@ nav ul{
     margin-top: 1.5em;
   }
 
+  .productNav{
+    margin-left:5em;
+    margin-bottom:2em;
+
+  }
+
+  .container .product1{
+    margin-left: 5em;
+  }
+
+  
 
   }
   
@@ -430,6 +495,11 @@ nav ul{
     .container .recommended4{
       max-height: 50em;
     }
+
+    .container .product1{
+      margin-left: 2em;
+    }
+   
      
     }
   
@@ -464,6 +534,31 @@ nav ul{
     .container .recommended4{
       max-height: 40em;
     }
+
+    .container .product1{
+      margin-left: 5em;
+    }
+
+    nav{
+      margin-right:-1em;
+    }
+
+    .container .product1{
+      margin-left: -3em;
+    }
+
+    .container .productPhoto{
+      max-height:20em;
+    }
+
+    .container .productDetail{
+      max-height: 20em;
+
+    }
+
+    .container .block1{
+      max-height:20em;
+    }
     }
   
     @media only screen and (max-width: 25em) {
@@ -491,5 +586,33 @@ nav ul{
       .container .recommended4{
         max-height: 30em;
       }
-       
+       nav{
+        margin-right:-2.2em;
       }
+
+      .element{
+        margin-right: -1em;
+      }
+
+      .productNav{
+        margin-right:7em;
+    
+      }
+      .container .product1{
+        margin-left: -6em;
+      }
+      
+      }
+
+
+      @media only screen and (max-width: 20em) {
+  
+        .container .product1{
+          margin-left: -6em;
+        }
+        
+        .container .products img{
+          width:20em;
+        }
+
+        }
