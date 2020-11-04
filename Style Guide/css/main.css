@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   padding: 2rem;
+
 }
 
 .element {
@@ -31,7 +32,8 @@ h4 {
 
 p {
   margin-top: 0;
-    width: 70%;
+  text-align: left;
+  align-items: center;
 }
 
 nav a:hover, nav a:focus {
@@ -524,4 +526,15 @@ th:last-child{
 .icon{
   width: 1.1em;
   margin-bottom:-3px;
+}
+
+.contain-about{
+  margin-top: 3em;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.text-about{
+  margin-top: 1em;
+  line-height:1.6;
+  font-size: 16px;
 }

@@ -19,6 +19,8 @@ nav ul{
 }
 
 /* HOMEPAGE FLEXBOX */
+
+
 .container {
   display: flex;
   flex-direction: row;
@@ -502,6 +504,7 @@ nav ul{
     }
 
 
+
     }
 
 
@@ -603,6 +606,10 @@ nav ul{
         margin-left: -6em;
       }
 
+      .navbar{
+        font-size: 18px;
+      }
+
       }
 
 
@@ -614,6 +621,9 @@ nav ul{
 
         .container .products img{
           width:20em;
+        }
+        .navbar{
+          font-size: 14px;
         }
 
         }

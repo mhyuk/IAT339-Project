@@ -10,15 +10,19 @@
 
 		<title>Collection Page_P2</title>
 
-		<link href="css/main.css" rel="stylesheet">
+		<!-- <link href="css/main.css" rel="stylesheet">
+		<link href="Style Guide/css/main.css" rel="stylesheet"> -->
+
 		<link href="Style Guide/css/main.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
 		<link rel="stylesheet" href="Style Guide/css/collectionUpdated.css">
-    <link rel="stylesheet" href="Style Guide/css/flexbox.css">
+
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 		<!--
 			By creating a separate stylesheet for our grid styling, we can take and use the same grid structure on different websites if we should so choose.
@@ -28,25 +32,24 @@
 	</head>
 
 	<body>
-
 		<div style="float:left; font-size: 1.5em; font-weight: bold;" class="mainFont"><a href="index.html">PROJECT_RC</a></div>
 
-    <nav style="float:right;">
-        <ul class="navbar" id="MenuItems">
-          <li><a href="index.html">HOME</a></li>
-          <li><a class="active" href="product.html">SHOP</a></li>
-          <li><a href="collectionUpdated.html">COLLECTIONS</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          </ul>
-          <a href="#"><img src="Style Guide/img/account.png" style="margin-left: 1em;" class="icon" alt="Account"></a>
-          <a href="cart.html"><img src="Style Guide/img/cart.png" style="margin-bottom: -0px;" class="icon" alt="Cart"></a>
+		<nav style="float:right;">
+				<ul class="navbar" id="MenuItems">
+					<li><a class="active" href="index.html">HOME</a></li>
+					<li><a href="product.html">SHOP</a></li>
+					<li><a href="collectionUpdated.html">COLLECTIONS</a></li>
+					<li><a href="aboutUpdated.html">ABOUT</a></li>
+					</ul>
+					<a href="#"><img src="Style Guide/img/account.png" style="margin-left: 1em;" class="icon" alt="Account"></a>
+					<a href="cartUpdated.html"><img src="Style Guide/img/cart.png" style="margin-bottom: -0px;" class="icon" alt="Cart"></a>
 
-        <div class="menu-btn menu-icon" onclick="menutoggle()">
-          <div class="menu-btn_burger"></div>
-      </nav>
+				<div class="menu-btn menu-icon" onclick="menutoggle()">
+					<div class="menu-btn_burger"></div>
+			</nav>
 <div style="clear: both;"></div><br>
 
-    <section class="element">
+		<section class="element"></section>
 
 	<section id="banner">
 		<div class="banner-text">
@@ -103,66 +106,66 @@
 		</div>
 	</section>
 
+<!-- start of look book-->
+<!-- star icon: https://fontawesome.com/v4.7.0/icon/star-o -->
+	<div class="small-container">
+		<div class="product-heading"><h3>Trending Products</h3></div>
+		<div class="row">
 
-	<!--	lookbook  -->
-<!--
-	<section id="lookbook">
-		<div class="lookbook lookBk-container">
-			<div class="all-lookBk">
-
-				<div class="lookBk-item">
-					<div class="lookBk-text">
-						<h1>Lookbook 1</h1>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa
-							distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum
-							repellat animi, fugit architecto voluptatum odit et!</p>
-					</div>
-					<div class="lookBk-img">
-						<img src="Style Guide/img/cover2.jpg">
-					</div>
+			<div class="col-4">
+				<img src="Style Guide/img/sweater.jpg">
+				<h3>Pink Sweater</h3>
+				<div class="rating">
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star-o unchecked"></i>
 				</div>
-
-				<div class="lookBk-item">
-					<div class="lookBk-text">
-						<h1>Lookbook 2</h1>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa
-							distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum
-							repellat animi, fugit architecto voluptatum odit et!</p>
-					</div>
-					<div class="lookBk-img">
-						<img src="Style Guide/img/cover2.jpg">
-					</div>
-				</div>
-
-				<div class="lookBk-item">
-					<div class="lookBk-text">
-						<h1>Lookbook 3</h1>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa
-							distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum
-							repellat animi, fugit architecto voluptatum odit et!</p>
-					</div>
-					<div class="lookBk-img">
-						<img src="Style Guide/img/cover2.jpg">
-					</div>
-				</div>
-
-				<div class="lookBk-item">
-					<div class="lookBk-text">
-						<h1>Lookbook 4</h1>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa
-							distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum
-							repellat animi, fugit architecto voluptatum odit et!</p>
-					</div>
-					<div class="lookBk-img">
-						<img src="Style Guide/img/cover2.jpg">
-					</div>
-				</div>
-
+				<p>$20.00</p>
 			</div>
-		</div>
-	</section> -->
 
-	<script src="main.js"></script>
+			<div class="col-4">
+				<img src="Style Guide/img/sweater.jpg">
+				<h3>Pink Sweater</h3>
+				<div class="rating">
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star-o unchecked"></i>
+				</div>
+				<p>$20.00</p>
+			</div>
+
+			<div class="col-4">
+				<img src="Style Guide/img/sweater.jpg">
+				<h3>Pink Sweater</h3>
+				<div class="rating">
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star-o unchecked"></i>
+				</div>
+				<p>$20.00</p>
+			</div>
+
+			<div class="col-4">
+				<img src="Style Guide/img/sweater.jpg">
+				<h3>Pink Sweater</h3>
+				<div class="rating">
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star-o unchecked"></i>
+				</div>
+				<p>$20.00</p>
+			</div>
+
+		</div>
+	</div>
 
 	</body>
 </html>
