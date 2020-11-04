@@ -112,13 +112,19 @@ a{
 .button{
   display: inline-block;
   padding: 0.5rem;
-  color: black;
+  color: white;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
 
   border: none;
   text-align: center;
+}
+
+.button:visited {
+  text-decoration: none;
+  color: #ffffff !important;
+
 }
 
 .button1{

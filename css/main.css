@@ -6,6 +6,14 @@ nav li {
   margin-left: 0.5em;
   margin-top: -0.4em;
   flex: auto;
+  list-style-type: none;
+
+}
+
+li {
+  list-style-type: none;
+  display: list-item;
+
 }
 
 nav ul{
@@ -55,7 +63,7 @@ nav ul{
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
-  background-image: url('banner2.jpg');
+  background-image: url('banner_1.jpg');
   z-index: -1;
   position: relative;
 }
@@ -358,7 +366,15 @@ nav ul{
 
   @media only screen and (max-width: 92em) {
     .container .bannerImg {
-      background-image: url('banner3.jpg');
+      max-height:26em;
+    }
+
+    .container .banner{
+      margin-bottom:-2em;
+    }
+
+    .container .btn {
+      top: 75%;
     }
     .container .hotitem1{
       background-image: url('hotitem1_2.jpg');
@@ -373,8 +389,13 @@ nav ul{
 
   @media only screen and (max-width: 70em) {
     .container .bannerImg {
-      background-image: url('banner4.jpg');
+      max-height:23em;
     }
+
+    .container .banner{
+      margin-bottom:-5em;
+    }
+
     .container .hotitem2{
       background-image: url('hotitem2.jpg');
     }
@@ -388,16 +409,28 @@ nav ul{
 
   }
 
+  @media only screen and (max-width: 60em) {
 
+    .container .bannerImg {
+      max-height:20em;
+    }
+
+    .container .banner{
+      margin-bottom:-8em;
+    }
+  }
 
 
   @media only screen and (max-width: 50em) {
 
-  .container .banner{
-    height: 25em;
-    max-height: 25em;
+    .container .bannerImg {
+      max-height:18em;
+    }
 
-  }
+    .container .banner{
+      margin-bottom:-10em;
+    }
+
 
   .container .hotitem1{
     height: 35em;
@@ -470,10 +503,17 @@ nav ul{
 
   @media only screen and (max-width: 40em) {
 
-    .container .banner{
-      height: 20em;
-      max-height: 20em;
+    .container .bannerImg {
+      background-image: url('banner_2.jpg');
+      max-height:20em;
+    }
 
+    .container .btn {
+      top: 90%;
+    }
+
+    .container .banner{
+      margin-bottom:-12em;
     }
 
     .container .hotitem1{
@@ -510,10 +550,13 @@ nav ul{
 
   @media only screen and (max-width: 30em) {
 
-    .container .banner{
-      height: 15em;
-      max-height: 15em;
+    .container .bannerImg {
+      max-height:18em;
+    }
 
+
+    .container .banner{
+      margin-bottom:-13em;
     }
 
     .container .hotitem1{
@@ -563,10 +606,19 @@ nav ul{
     .container .block1{
       max-height:20em;
     }
+
     }
 
     @media only screen and (max-width: 25em) {
 
+      .container .bannerImg {
+        max-height:15em;
+      }
+  
+  
+      .container .banner{
+        margin-bottom:-16em;
+      }
 
       .container .hotitem1{
         height: 15em;
@@ -615,6 +667,15 @@ nav ul{
 
       @media only screen and (max-width: 20em) {
 
+        .container .bannerImg {
+          max-height:13em;
+        }
+    
+    
+        .container .banner{
+          margin-bottom:-17em;
+        }
+
         .container .product1{
           margin-left: -6em;
         }
@@ -627,3 +688,90 @@ nav ul{
         }
 
         }
+
+
+
+
+        /*
+    begin footer
+    */
+.footer {
+  width: 100%;
+  padding: 1em 2em 0em 8em;
+  text-align: justify;
+  box-sizing: border-box;
+  display: block;
+  color: black;
+  border-top: 1px solid #e7e7e7;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(231, 231, 231);
+
+
+}
+
+.inner-footer {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.footer-items {
+  width: 15em;
+  padding: 10px 15px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.footer-items p {
+  color: grey;
+  text-align: left;
+  line-height: 25px;
+  font-size: 14px;
+  width: 90%;
+}
+
+.footer-items ul {
+  list-style: none;
+  font-size: 13px;
+  margin-left:-3em;
+}
+
+.footer-items ul li, .footer-items ul li a {
+  text-decoration: none;
+  margin: 10px 0px;
+  color: black;
+}
+
+.footer-items a:hover {
+  border-bottom: 1px solid black;
+}
+
+.footer-items h5{
+  font-size: 0.8em;
+  text-transform: uppercase;
+
+}
+
+.social i {
+  margin: 0 10px 10px 1px;
+  font-size: 1.25em;
+  flex-direction: row;
+  color: black;
+}
+
+.footer-bottom {
+  width: 100%;
+  padding: 10px 0px;
+  margin-left: -3em;
+  font-size: 0.8em;
+  color: rgb(88, 88, 88);
+  text-align: center;
+}
