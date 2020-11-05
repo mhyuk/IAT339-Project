@@ -382,7 +382,7 @@ width: 95%;
 	*/
 	-webkit-justify-content: wrap;
 	-ms-justify-content: wrap;
-	justify-content: wrap;
+	justify-content:
 	flex-direction: row;
 
 }
@@ -625,8 +625,7 @@ th:last-child{
   opacity: 1;
 }
 
-/* source for payment form: https://www.youtube.com/watch?v=Nj7zwJZ9bYI&t=25s */
-@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
 
 .payment{
   /*background: #f8f8f8; */

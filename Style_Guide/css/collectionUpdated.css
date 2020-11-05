@@ -98,7 +98,6 @@ p, ol, ul {
 	border: 0.5px solid black;
 }
 .subscribe{
-  align-items: right;
   margin-top: 18em;
 }
 
@@ -124,9 +123,7 @@ p, ol, ul {
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: left;
 	text-align: center;
-
 	margin-top: 100px;
 }
 .season-heading h3{
@@ -277,8 +274,4 @@ h3{
 	p{
 		text-align: center;
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> master
