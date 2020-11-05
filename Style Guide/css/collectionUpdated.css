@@ -79,9 +79,10 @@ p, ol, ul {
 	font-size: 4em;
 }
 .banner-text p{
-	font-size: 1.5;
+	font-size: 1.5em;
 	font-style: italic;
-
+	text-align: center;
+	color: black;
 }
 .banner-btn{
 	margin: 70px auto 0;
@@ -96,13 +97,24 @@ p, ol, ul {
 	color: black;
 	border: 0.5px solid black;
 }
+.subscribe{
+  align-items: right;
+  margin-top: 18em;
+}
+
 @media screen and (max-width: 770px){
 	.banner-text h1{
 		font-size: 2em;
 	}
+	.banner-text p{
+		font-size: 1.1em;
+	}
 	.banner-btn{
 		display: block;
 		margin: 20px auto;
+	}
+	.subscribe{
+	  margin-top: 15em;
 	}
 }
 
