@@ -385,7 +385,7 @@ width: 95%;
 
 
 /*  NEWLY ADDED by Sunita: payment form   */
-
+/*
 .inner_row{
   max-width: 1200px;
   height: auto;
@@ -405,7 +405,7 @@ width: 95%;
 
 
 .contain {
-  background-color: #fff; /* originally was gray */
+  background-color: #fff;
   padding: 5px 20px 15px 20px;
   border: 1px solid #fff;
   border-radius: 3px;
@@ -459,7 +459,7 @@ hr {
 span.price {
   float: right;
   color: grey;
-}
+} */
 
 /*
   cart details  https://www.youtube.com/watch?v=oXrlgOEiy6o   https://codepen.io/theresa-e/pen/BOBQxR  -------------------
