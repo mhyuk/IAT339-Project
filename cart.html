@@ -9,6 +9,8 @@
 
     <link href="Style Guide/css/main.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"> -->
+
 
 
 
@@ -131,11 +133,70 @@
 <div class="bottom-line"></div>
 </div>
 
+<!--  final payment form-->
+
+<div class="wrapper">
+  <div class="payment">
+  <!--  <div class="payment-logo">
+      <p>p</p>
+    </div> -->
+
+
+    <h2>Payment Gateway</h2>
+
+  <div class="radio-wrapper">
+  <div class="radio-option">
+    <input type="radio" name="input-radio" id="optionA">
+    <label for="optionA">Credit</label>
+  </div>
+
+  <div class="radio-option">
+    <input type="radio" name="input-radio" id="optionB">
+    <label for="optionB">PayPal</label>
+  </div>
+</div>
+
+    <div class="form">
+      <div class="card space icon-relative">
+        <label class="label">Card holder</label>
+        <input type="text" class="input" placeholder="Coding Market">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Card number</label>
+        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date</label>
+          <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00">
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVC</label>
+          <input type="text" class="input" data-mask="000" placeholder="000">
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+
+      <div class="button button1">
+        CHECKOUT
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
 <!--begin footer-->
 <footer>
   <div class="footer">
    <div class="inner-footer">
- 
+
      <div class="footer-items">
        <h5> CUSTOMER SERVICE</h5>
        <p>info@projectrc.com</p>
@@ -148,7 +209,7 @@
            <li><a href="styleguide.html">Style Guide</a></li>
            <li><a href="reference.html">Reference</a></li>
          </ul>    </div>
- 
+
      <div class="footer-items">
        <div class="social">
          <h5> Find us on </h5>
@@ -157,7 +218,7 @@
          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
        </div>
      </div>
- 
+
      <div class="footer-items">
        <h5> Quick Links </h5>
        <ul>
