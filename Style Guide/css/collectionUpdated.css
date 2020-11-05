@@ -167,10 +167,19 @@ p, ol, ul {
 	transition: 1s;
 }
 .season-name p{
-	font-size: 32px;
+	font-size: 14px;
+	text-align: center;
+}
+hr{
+	background: #fff;
+	height: 2px;
+	border: 0;
+	margin: 15px auto;
+	width: 60%;
 }
 .single-season:hover .season-name{
 	bottom: 40%;
+	left: 50%;
 	opacity: 1;
 }
 @media screen and (max-width: 770px){
@@ -179,10 +188,16 @@ p, ol, ul {
 		margin-bottom: 30px;
 	}
 	.season-name p{
-		font-size: 20px;
+		font-size: 12px;
+	}
+	h3{
+		font-size: 16px;
+	}
+	hr{
+		margin: 5px auto;
 	}
 	.single-season:hover .season-name{
-		bottom: 30%;
+		bottom: 18% !important;
 	}
 }
 /* start of new look book*/
