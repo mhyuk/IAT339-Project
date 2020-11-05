@@ -187,6 +187,9 @@ hr{
 	left: 50%;
 	opacity: 1;
 }
+.single-season a{
+	color: #fff;
+}
 @media screen and (max-width: 770px){
 	.single-season{
 		flex-basis: 100%;
@@ -261,4 +264,8 @@ h3{
 	p{
 		text-align: center;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master
