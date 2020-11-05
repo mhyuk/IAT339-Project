@@ -543,7 +543,9 @@ nav ul{
       margin-left: 2em;
     }
 
-
+    .productTitle{
+      text-align: center;
+    }
 
     }
 
@@ -606,7 +608,9 @@ nav ul{
     .container .block1{
       max-height:20em;
     }
-
+    .productTitle{
+      text-align: center;
+    }
     }
 
     @media only screen and (max-width: 25em) {
@@ -661,7 +665,9 @@ nav ul{
       .navbar{
         font-size: 18px;
       }
-
+      .productTitle{
+        text-align: center;
+      }
       }
 
 
@@ -686,7 +692,9 @@ nav ul{
         .navbar{
           font-size: 14px;
         }
-
+        .productTitle{
+          text-align: center;
+        }
         }
 
 

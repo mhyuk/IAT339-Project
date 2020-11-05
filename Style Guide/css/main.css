@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   padding: 2rem;
-
+  
 }
 
 .element {
@@ -778,6 +778,11 @@ th:last-child{
   .card-item{
     width: 100%;
     margin-bottom: 20px;
+  }
+  .contain-about{
+    margin-top: 1.5em;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   /*
   .btn{
