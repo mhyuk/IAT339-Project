@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Project_RC (Real Clothes) - Style Guide</title>
+
+    <link href="Style Guide/css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--<link href="Style Guide/css/flexbox.css" rel="stylesheet"> FIXED the issue wiht nav-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+
+
+  </head>
+
+
+  <body>
+
+    <div style="float:left; font-size: 1.5em; font-weight: bold;" class="mainFont"><a href="index.html">PROJECT_RC</a></div>
+
+    <nav style="float:right;">
+        <ul class="navbar" id="MenuItems">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="product.html">SHOP</a></li>
+          <li><a href="collectionUpdated.html">COLLECTIONS</a></li>
+          <li><a href="aboutUpdated.html">ABOUT</a></li>
+          </ul>
+          <a href="#"><img src="Style Guide/img/account.png" style="margin-left: 1em;" class="icon" alt="Account"></a>
+          <a href="cart.html"><img src="Style Guide/img/cart.png" style="margin-bottom: -0px;" class="icon" alt="Cart"></a>
+
+        <div class="menu-btn menu-icon" onclick="menutoggle()">
+          <div class="menu-btn_burger"></div>
+      </nav>
+<div style="clear: both;"></div><br>
+
+    <section class="element">
+
+
+  <!-- START OF CHECKOUT/CART PAGE: by Sunita-->
+    <!--CART - Reference-Watched this tutorial: https://www.youtube.com/watch?v=oXrlgOEiy6o  -->
+  <div class="small-container cart-page">
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="Style Guide/img/hat.png" alt="A black hat">
+            <div>
+              <p>Black Panama Hat</p>
+              <small>Price: $34.00</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$34.00</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="Style Guide/img/greenCoat.png" alt="A green coat">
+            <div>
+              <p>Emerald Green Blazer</p>
+              <small>Price: $50.99</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$50.99</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="Style Guide/img/eyeglass.png" alt="eyeglass">
+            <div>
+              <p>Lenseless Eyeglasses</p>
+              <small>Price: $20.00</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$20.00</td>
+      </tr>
+
+    </table>
+
+    <div class="total-price">
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td>$104.99</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td>$35.00</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>$139.99</td>
+        </tr>
+      </table>
+
+    </div>
+    <div class="bottom-line"></div>
+  </div>
+
+
+<!--PAYMENT FORM- Reference-Watched this tutorial: https://www.youtube.com/watch?v=MPbF0FOpAVs  -->
+  <div class="row">
+    <div class="inner_row">
+    <div class="col-75">
+      <div class="contain">
+        <form action="/action_page.php">
+
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" class="text" placeholder="Sunita Mirzada">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" class="text" placeholder="sunita@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" class="text" placeholder="542 W. 10th Ave.">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" class="text" placeholder="New York">
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" class="text" placeholder="NY">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" class="text" placeholder="10001">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-50">
+              <h3>Payment</h3>
+
+              <form>
+                <label class="container">Credit<input type="radio" checked="checked" name="type" value="pink">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">PayPal<input type="radio" name="type" value="white">
+                  <span class="checkmark"></span>
+                </label>
+              </form>
+
+
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" class="text" placeholder="Sunita Mirzada">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" class="text" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" class="text" placeholder="October">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" class="text" placeholder="2024">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" class="text" placeholder="123">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="CONTINUE TO CHECKOUT" class="button button1">
+        </form>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- END OF CHECKOUT/CART PAGE: by Sunita-->
+
+<!--
+      <section class="element">
+        <h3>Checkout Cart</h3>
+      </section>
+      <table class="cart">
+        <tr class="mainFont">
+          <td></td>
+          <td><b>Item</b></td>
+          <td><b>Item Price</b></td>
+          <td><b>Quantity</b></td>
+        </tr>
+        <tr class="paragraph">
+          <td><img src="img/item1.png" height="225px"></td>
+          <td><p>Gold Pearl Choker Necklace</p> <p><b>Color </b> Gold/White</p></td>
+          <td>CA$84.00</td>
+          <td><input type="text" id="cart" name="cart" size="1" value="1"></td>
+        </tr>
+        <tr>
+          <td><img src="img/item3.png" height="225px"></td>
+          <td><p>Golden Rose Resin Earring</p> <p><b>Color </b> Gold</p></td>
+          <td>CA$35.00</td>
+          <td><input type="text" id="cart" name="cart" size="1" value="1"></p></td>
+        </tr>
+      </table>
+<section class="element"></section>
+      <h3>Payment Form</h3>
+        <form class="navfont form_input" >
+          <ul>
+            <label class="container">Credit or Debit Card<input type="radio" checked="checked" name="payment" value="card">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Paypal<input type="radio" name="payment" value="paypal">
+              <span class="checkmark"></span>
+            </label>
+
+          <p>Card Number * <br>
+          <input type="text" id="cardNumber" name="cardNumber"  placeholder="XXXX XXXX XXXX XXXX"></p>
+          <p class="navfont">Expiration Date *<br>
+          <input type="text" id="month" name="month" placeholder="-- Month--">
+          <input type="text" id="year" name="year" placeholder="-- Year --"></p>
+          <p class="navfont">CVV *      <br>
+          <input type="text" id="cvv" name="cvv" ></p>     <br>
+          <a href="#" class="button button1" >SUBMIT</a>
+        </ul>
+      </form> -->
+
+
+
+
+  </body>
+</html>

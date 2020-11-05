@@ -1,111 +1,214 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
-  <head>
+	<head>
 
-    <meta charset="utf-8">
-    <title>Project_RC (Real Clothes) - Style Guide</title>
+		<meta charset="utf-8">
 
-    <link href="Style Guide/css/main.css" rel="stylesheet">
-    <link href="Style Guide/css/styleCollection.css" rel="stylesheet">
-    <link href="Style Guide/css/flexbox.css" rel="stylesheet">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Collection Page_P2</title>
+
+		<!-- <link href="css/main.css" rel="stylesheet">
+		<link href="Style Guide/css/main.css" rel="stylesheet"> -->
+
+		<link href="Style Guide/css/main.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="Style Guide/css/collectionUpdated.css">
+
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  </head>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!--
+			By creating a separate stylesheet for our grid styling, we can take and use the same grid structure on different websites if we should so choose.
+		-->
 
 
-  <body>
+	</head>
 
-    <div style="float:left; font-size: 1.5em; font-weight: bold;" class="mainFont"><a href="index.html">PROJECT_RC</a></div>
+	<body>
+		<div style="float:left; font-size: 1.5em; font-weight: bold;" class="mainFont"><a href="index.html">PROJECT_RC</a></div>
 
-    <nav style="float:right;">
-        <div class="navbar">
-          <a href="index.html">HOME</a>
-          <a href="product.html">SHOP</a>
-          <a class="active" href="collection.html">COLLECTIONS</a>
-          <a href="about.html">ABOUT</a>
-          <a href="#"><img src="Style Guide/img/account.png" style="margin-left: 1em;" class="icon" alt="Account"></a>
-          <a href="cart.html"><img src="Style Guide/img/cart.png" style="margin-bottom: -0px;" class="icon" alt="Cart"></a>
+		<nav style="float:right;">
+				<ul class="navbar" id="MenuItems">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="product.html">SHOP</a></li>
+					<li><a class="active" href="collection.html">COLLECTIONS</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					</ul>
+					<a href="#"><img src="Style Guide/img/account.png" style="margin-left: 1em;" class="icon" alt="Account"></a>
+					<a href="cart.html"><img src="Style Guide/img/cart.png" style="margin-bottom: -0px;" class="icon" alt="Cart"></a>
 
+				<div class="menu-btn menu-icon" onclick="menutoggle()">
+					<div class="menu-btn_burger"></div>
+			</nav>
+<div style="clear: both;"></div><br>
 
-        </div>
-      </nav>
-      <div style="clear: both;"></div><br>
-      <section class="element">
+		<section class="element"></section>
 
-      <div class="collectionBackground"></div>
-      <div class="collection-btn">SUBSCRIBE</div>
+	<section id="banner">
+		<div class="banner-text mainFont" style="color : #779c92;">
+			<h1>Seasonal Collection</h1>
+			<p>Pack Uour Unique Seasonal Style</p>
+				<div class="button button1 collectionLink">
+					<a href="#">Subscribe</a>
+				</div>
+		</div>
+	</section>
+	<!-- skipped the side navigation here-->
+	<!--<div id="slideNav"></div>  -->
+	<!--<section  id="features"></section>  -->
 
+	<div class="season-heading">
+		<h3>Choose From Our Seasonal Collection</h3>
+	</div>
 
+	<section id="seasonal">
+	<!--	<div class="title-text">
+			<p>OUR SEASONAL COLLECTION</P>
+			<h1>Why chose us</h1>
+		</div> -->
 
+		<div class="seasonal-box">
+			<div class="single-season">
+				<img src="Style Guide/img/pinkShirt.jpg">
+				<div class="overlay"></div>
+				<div class="season-name">
+					<p>Spring Season</p>
+				</div>
+			</div>
+			<div class="single-season">
+				<img src="Style Guide/img/grayShirt.jpg">
+				<div class="overlay"></div>
+				<div class="season-name">
+					<p>Summer Season</p>
+				</div>
+			</div>
+			<div class="single-season">
+				<img src="Style Guide/img/sweater.jpg">
+				<div class="overlay"></div>
+				<div class="season-name">
+					<p>Fall Season</p>
+				</div>
+			</div>
+			<div class="single-season">
+				<img src="Style Guide/img/pinkShirt.jpg">
+				<div class="overlay"></div>
+				<div class="season-name">
+					<p>Winter Season</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-      <h5>Our Seasonal Collection</h5>
-      <div class="container1">
+<!-- start of look book-->
+<!-- star icon: https://fontawesome.com/v4.7.0/icon/star-o -->
+	<div class="small-container">
+		<div class="product-heading"><h3>Trending Products</h3></div>
+		<div class="row">
 
-        <div class="container1-img">
-          <a href="#"><img src="Style Guide/img/moodboard2.png" class="image1" alt="Lenseless Eyeglasses"></a>
-        </div>
+			<div class="col-4">
+				<img src="Style Guide/img/sweater.jpg">
+				<h3>Pink Sweater</h3>
+				<div class="rating">
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star-o unchecked"></i>
+				</div>
+				<p>$20.00</p>
+			</div>
 
-        <div class="container1-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit tristique tortor, id consequat ante pretium at. Vestibulum euismod risus sed nibh euismod eleifend. Mauris id ante eu velit cursus feugiat. Fusce nec risus massa. Quisque eu vulputate urna. Nulla facilisi. Vivamus ullamcorper, eros in tempor fringilla, purus justo tincidunt lacus, sed ultrices augue risus non neque. Nunc mollis mauris metus, vel semper ligula condimentum sed. Cras metus turpis, molestie eget suscipit vel, pharetra at eros.</p>
-        </div>
+			<div class="col-4">
+				<img src="Style Guide/img/sweater.jpg">
+				<h3>Pink Sweater</h3>
+				<div class="rating">
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star-o unchecked"></i>
+				</div>
+				<p>$20.00</p>
+			</div>
 
-      </div>
+			<div class="col-4">
+				<img src="Style Guide/img/sweater.jpg">
+				<h3>Pink Sweater</h3>
+				<div class="rating">
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star-o unchecked"></i>
+				</div>
+				<p>$20.00</p>
+			</div>
 
+			<div class="col-4">
+				<img src="Style Guide/img/sweater.jpg">
+				<h3>Pink Sweater</h3>
+				<div class="rating">
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star checked"></i>
+					<i class="fa fa-star-o unchecked"></i>
+				</div>
+				<p>$20.00</p>
+			</div>
 
-      <!-- PRODUCT LISTINGS -->
-        <h5>Trending Categories</h5>
-            <div class="productBox">
+		</div>
+	</div>
 
-              <div class="productBox-item-product1">
-                <div class="productBox-item-product-img">
-                  <a href="#"><img src="Style Guide/img/eyeglass.png" class="image"  alt="Lenseless Eyeglasses"></a>
-                </div>
-              </div>
-
-              <div class="productBox-item-product2">
-                <div class="productBox-item-product-img">
-                  <a href="#"><img src="Style Guide/img/hat.png" class="image" alt="black hat"></a>
-                  <div class="overlayRight">
-                    <div class="content">New Collection</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="productBox-item-product3">
-                <div class="productBox-item-product-img">
-                  <a href="#"><img src="Style Guide/img/necklace.png" class="image" alt="Pearl necklace with chain"></a>
-                </div>
-              </div>
-
-              <div class="productBox-item-product4">
-                <div class="productBox-item-product-img">
-                  <a href="#"><img src="Style Guide/img/greenCoat.png" class="image"  alt="green coat"></a>
-                  <div class="overlayRight">
-                    <div class="content">New Collection</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="productBox-item-product5">
-                <div class="productBox-item-product-img">
-                  <a href="#"><img src="Style Guide/img/bow.png" class="image"  alt="a bow"></a>
-                </div>
-              </div>
-
-              <div class="productBox-item-product6">
-                <div class="productBox-item-product-img">
-                  <a href="#"><img src="Style Guide/img/blueCoat.png" class="image" alt="blue coat"></a>
-                </div>
-              </div>
-
-
-
-            </div>
-
-
-  </body>
+	<!--begin footer-->
+	<footer>
+		<div class="footer">
+		 <div class="inner-footer">
+	   
+		   <div class="footer-items">
+			 <h5> CUSTOMER SERVICE</h5>
+			 <p>info@projectrc.com</p>
+			 <p>604-123-4567</p>
+		   </div>
+		   <div class="footer-items">
+			   <h5> About Us </h5>
+			   <ul>
+				 <li><a href="about.html">About</a></li>
+				 <li><a href="styleguide.html">Style Guide</a></li>
+				 <li><a href="reference.html">Reference</a></li>
+			   </ul>    </div>
+	   
+		   <div class="footer-items">
+			 <div class="social">
+			   <h5> Find us on </h5>
+			   <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+			   <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+			   <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+			 </div>
+		   </div>
+	   
+		   <div class="footer-items">
+			 <h5> Quick Links </h5>
+			 <ul>
+			   <li><a href="index.html">Home</a></li>
+			   <li><a href="product.html">Shop</a></li>
+			   <li><a href="collectionUpdated.html">Collections</a></li>
+			 </ul>
+		   </div>
+		 </div>
+		 <div class="footer-bottom">
+		   COPYRIGHT &copy; PROJECT_RC ALL RIGHT RESERVED
+		 </div>
+	   </div>
+		 </footer>
+		 <script src="main.js"></script>
+	</body>
 </html>

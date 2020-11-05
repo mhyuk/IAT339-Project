@@ -48,11 +48,15 @@ p, ol, ul {
 	color: white;
   }
 
+  #banner a:visited{
+	color: white;
+  }
 #banner{
 	background: url(../img/coverA.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
+	
 }
 .logo{
 	width: 2em;
