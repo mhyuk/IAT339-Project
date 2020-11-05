@@ -18,6 +18,9 @@ body {
   border-top-color: black;
 }
 
+h1{
+  font-size: 4em;
+}
 h2 {
   margin-top: 6rem;
 }
@@ -122,10 +125,7 @@ a{
   cursor: pointer;
 }
 
-.subscribe{
-  align-items: right;
-  margin-top: 18em;
-}
+
 
 
 .button1{
@@ -557,6 +557,9 @@ th:last-child{
   margin-top: 3em;
   padding-left: 12%;
   padding-right: 12%;
+}
+.contain-about h1{
+  font-size: 1.75em;
 }
 .text-about{
   margin-top: 1em;
