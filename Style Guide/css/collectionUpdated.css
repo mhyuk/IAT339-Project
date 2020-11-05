@@ -49,16 +49,21 @@ p, ol, ul {
   }
 
   #banner a:visited{
-	color: white;
+	color: rgb(61, 61, 61);
   }
+  #banner a{
+	color: rgb(70, 70, 70);
+  }
+
 #banner{
-	background: url(../img/coverA.jpg);
+	background: url(../img/coverA.png);
 
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
 
 }
+
 .logo{
 	width: 2em;
 	position: absolute;
