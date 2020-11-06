@@ -792,4 +792,18 @@ th:last-child{
   } */
 }
 
-/* contact us*/
+/* style guide responsive*/
+.box-styleGuide{
+  width: 80%;
+	display: block;
+
+
+	margin: auto;
+
+}
+@media screen and (max-width: 770px){
+  .box-styleGuide{
+
+    margin: auto;
+  }
+}
