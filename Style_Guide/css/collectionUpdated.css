@@ -131,6 +131,7 @@ p, ol, ul {
 	color: black;
 	font-size: 1.5em;
 	font-weight: normal;
+	margin-bottom: 0.8em;
 }
 #seasonal{
 	width: 100%;
@@ -246,11 +247,12 @@ hr{
 .product-heading h3{
 	text-align: left;
 	margin-top: 100px;
-	margin-bottom: 0.75em;
+	margin-bottom: 1.7em;
 	padding-left: 1em;
 	color: black;
 	font-size: 1.5em;
 	font-weight: normal;
+
 }
 h3{
 	color: #555;
