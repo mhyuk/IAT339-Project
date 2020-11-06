@@ -55,10 +55,15 @@
 
       <section class="element">
         <h3>In-text link</h3>
-        <a href="#product" class="mainFont">Product Page</a>
+
+        <h4>CSS selector:</h4>
+        <p>.footer-items</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a href="#"  class="mainFont"&gt;Product Page&lt;/a&gt;</code>
+        <code>&lt;a href="https://www.google.com/"  class="footer-items"&gt;This is an in-text link&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a href="https://www.google.com/">This is an in-text link</a>
 
       </section>
 
@@ -67,20 +72,21 @@
       <section class="element">
 
         <h3>Navigation Link</h3>
-        <nav>
-          <ul  class="mainFont">
-          <a href="#">SHOP</a><br>
-          <a href="#">COLLECTIONS</a><br>
-          <a href="#">REVIEWS</a><br>
-          <a href="#">ABOUT</a><br>
-          </ul>
 
-      </nav>
-
+        <h4>CSS selector:</h4>
+        <p>.navbar</p>
+        <p>.MenuItems</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a href="#"  class="mainFont"&gt;SHOP&lt;/a&gt;</code>
+        <code>&lt;a class="active" href="index.html"&gt;HOME&lt;/a&gt;</code>
 
+        <h4>Rendered element:</h4>
+          <nav style="float:right;">
+            <ul class="navbar" id="MenuItems">
+              <li><a class="active" href="index.html">HOME</a></li>
+            </ul>
+          </nav>
+          <br>
 
       </section>
 
@@ -88,11 +94,10 @@
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
 
-        <ul class="mainFont">
-          <a class="button button1" href=" " rel="submit">CART</a>
-          <a class="button button1" href=" " rel="see_more">CHECKOUT</a>
-          <a class="button button1" href=" " rel="login">LOGIN</a>
-         </ul>
+        <h4>CSS selector:</h4>
+        <p>.mainFont</p>
+        <p>.button</p>
+        <p>.button1</p>
 
          <h4>Sample code:</h4>
          <code>
@@ -100,6 +105,12 @@
            &lt;a href="#" class="button button1"&gt;CART&lt;/a&gt; <br>
            &lt;/ul"&gt;
           </code>
+
+          <h4>Rendered element:</h4>
+          <ul class="mainFont">
+            <a class="button button1" href="#" rel="submit">SUBMIT</a>
+            <a class="button button1" href="#" rel="see_more">RESET</a>
+           </ul>
 
       </section>
 
