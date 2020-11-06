@@ -100,11 +100,11 @@
         <p>.button1</p>
 
          <h4>Sample code:</h4>
-         <code>
-          &lt;ul class="mainFont"&gt; <br>
-           &lt;a href="#" class="button button1"&gt;CART&lt;/a&gt; <br>
-           &lt;/ul"&gt;
-          </code>
+         <code>&lt;ul class="mainFont"&gt;</code>
+           <code>&lt;a href="#" class="button button1"&gt;SUBMIT&lt;/a&gt;</code>
+           <code>&lt;a href="#" class="button button1"&gt;RESET&lt;/a&gt;</code>
+           <code>&lt;/ul"&gt;</code>
+
 
           <h4>Rendered element:</h4>
           <ul class="mainFont">
@@ -118,19 +118,12 @@
       <section class="element">
         <h3>Text Input Field with Label</h3>
 
-        <div class="form">
-          <div class="card space icon-relative">
-            <label class="label">Card holder</label>
-            <input type="text" class="input" placeholder="Coding Market">
-            <i class="fas fa-user"></i>
-          </div>
-          <div class="card space icon-relative">
-            <label class="label">Card number</label>
-            <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
-            <i class="far fa-credit-card"></i>
-          </div>
-        </div>
-
+        <h4>CSS selector:</h4>
+        <p>.form</p>
+        <p>.input</p>
+        <p>.label</p>
+        <p>.icon-relative</p>
+        <p>.space</p>
 
         <h4>Sample code:</h4>
         <code>&lt;div class="card space icon-relative"&gt; <br>
@@ -139,50 +132,70 @@
           &lt;i class="fas fa-user"&gt;&lt;/i&gt; <br>
           &lt;/div&gt; <br> </code>
 
+          <h4>Rendered element:</h4>
+          <div class="form">
+            <div class="card space icon-relative">
+              <label class="label">Card holder</label>
+              <input type="text" class="input" placeholder="Coding Market">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
       </section>
 
 
       <section class="element">
         <h3>Radio Button with Label</h3>
 
-        <div class="radio-wrapper">
-          <div class="radio-option">
-            <input type="radio" name="input-radio" id="optionA">
-            <label for="optionA">Credit</label>
-          </div>
-        
-          <div class="radio-option">
-            <input type="radio" name="input-radio" id="optionB">
-            <label for="optionB">PayPal</label>
-          </div>
-        </div>
+        <h4>CSS selector:</h4>
+        <p>.radio-wrapper</p>
+        <p>.radio-option</p>
 
         <h4>Sample code:</h4>
         <code>
+          &lt;div class="radio-wrapper"&gt; <br>
           &lt;div class="radio-option"&gt; <br>
           &lt;input type="radio" name="input-radio" id="optionB"&gt; <br>
           &lt;label for="optionB"&gt;PayPal&lt;/label&gt; <br>
           &lt;/div&gt; <br>
+          &lt;/div&gt; <br>
          </code>
 
+         <h4>Rendered element:</h4>
+         <div class="radio-wrapper">
+           <div class="radio-option">
+             <input type="radio" name="input-radio" id="optionA">
+             <label for="optionA">Credit</label>
+           </div>
+
+           <div class="radio-option">
+             <input type="radio" name="input-radio" id="optionB">
+             <label for="optionB">PayPal</label>
+           </div>
+         </div>
       </section>
 
 
       <section class="element">
         <h3>Image as a Link</h3>
 
-        <div class="product">
-        <a href="img/earring.png">
-          <img src="img/earring.png" alt="earring" class="image-hover"></a><br><br>
-        </div>
+        <h4>CSS selector:</h4>
+        <p>.product</p>
+        <p>.image-hover</p>
+
           <h4>Sample code:</h4>
           <code>
             &lt;div class="product"&gt; <br>
-            &lt;a href="img/earring.png"&gt; <br>
-            &lt;img src="img/earring.png" alt="earring" class="image-hover"&gt;<br>
+            &lt;a href="img/item4.jpg"&gt; <br>
+            &lt;img src="img/item4.jpg" alt="wallet" class="image-hover"&gt;<br>
             &lt;/a&gt;
             &lt;/div&gt;
             </code>
+
+            <h4>Rendered element:</h4>
+            <div class="product">
+            <a href="img/item4.jpg">
+              <img src="img/item4.jpg" alt="wallet" class="image-hover"></a><br><br>
+            </div>
 
       </section>
 
@@ -197,34 +210,50 @@
       <h2 class="mainFont textcolor">Text Elements</h2>
 
       <section class="element">
-        <br>
-        <h3 class="mainFont" style="font-size: 30px;">Headings - Poppins</h3>
-        <h3 class="mainFont textcolor" style="font-size: 30px;">Headings - Poppins</h3>
-        <h3 class="mainFont" style="font-size: 25px;">Headings - Poppins</h3>
-        <h3 class="mainFont textcolor" style="font-size: 25px;">Headings - Poppins</h3>
+          <h3>Headings</h3>
+
+          <h4>CSS selector:</h4>
+          <p>h1</p>
+          <p>h2</p>
+          <p>h3</p>
+          <p>h4</p>
+          <p>h5</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
+          <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+          <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+          <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+          <code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
 
       </section>
 
       <section class="element">
-        <br>
-        <h3 class="navfont">Navigation - Sen </h3>
-        <h3 class="navfont textcolor">Navigation - Sen </h3>
-      </section>
+        <h3>Paragraphs</h3>
 
-      <section class="element">
-        <h3 class="paragraph">Paragraph - Lato <br> </h3>
-        <h3 class="paragraph textcolor">Paragraph - Lato <br> </h3>
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>This is a sample paragraph.</p>
+
       </section>
 
       <section class="element">
         <h3>Numbered Lists</h3>
 
-        <ol class="navfont">
-          <li>Headband</li>
-          <li>Necklace</li>
-          <li>Earring</li>
-          <li>Eyeglass</li>
-        </ol>
+        <h4>CSS selector:</h4>
+        <p>.navfont</p>
 
         <h4>Sample code:</h4>
         <code>
@@ -237,6 +266,13 @@
 
         </code>
 
+        <h4>Rendered element:</h4>
+        <ol class="navfont">
+          <li>Headband</li>
+          <li>Necklace</li>
+          <li>Earring</li>
+          <li>Eyeglass</li>
+        </ol>
       </section>
 
     </section>
@@ -250,6 +286,24 @@
 
       <section class="element">
         <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.navbara</p>
+        <p>.active</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;nav&gt; <br>
+          &lt;div class="navbar"&gt; <br>
+          &lt;a class="active" href="#"&gt;SHOP&lt;/a&gt; <br>
+          &lt;a href="#"&gt;COLLECTIONS&lt;/a&gt; <br>
+          &lt;a href="#"&gt;REVIEWS&lt;/a&gt; <br>
+          &lt;a href="#"&gt;ABOUT&lt;/a&gt; <br>
+          &lt;/div&gt; <br>
+          &lt;/nav&gt; <br>
+        </code>
+
+      <h4>Rendered element:</h4>
       <nav>
         <div class="navbar">
           <a class="active" href="#">SHOP</a>
@@ -260,31 +314,36 @@
       </nav>
       <br>
 
-      <h4>Sample code:</h4>
-      <code>
-        &lt;nav&gt; <br>
-        &lt;div class="navbar"&gt; <br>
-        &lt;a class="active" href="#"&gt;SHOP&lt;/a&gt; <br>
-        &lt;a href="#"&gt;COLLECTIONS&lt;/a&gt; <br>
-        &lt;a href="#"&gt;REVIEWS&lt;/a&gt; <br>
-        &lt;a href="#"&gt;ABOUT&lt;/a&gt; <br>
-        &lt;/div&gt; <br>
-        &lt;/nav&gt; <br>
-      </code>
-
-      </section>
+  </section>
 
       <section class="element">
         <h3>Product/Service Listing</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.productBox</p>
+        <p>.mainFont</p>
+        <p>.image</p>
+        <p>.productBox-item-product-img</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="productBox mainFont"&gt;<br>
+          &lt;div class="productBox-item-product3"&gt;<br>
+          &lt;div class="productBox-item-product-img"&gt;<br>
+          &lt;a href="#"&gt;&lt;img src="img/item3.png" class="image" alt="black hat"&gt;&lt;/a&gt;<br>
+          &lt;div class="overlayRight"&gt;New Collection&lt;/div&gt;<br>
+          &lt;div class="productTitle">Golden Rose Resin Earring&lt;br&gt;<br>
+           CA$35.00<br>
+           &lt;/div&gt;<br>
+           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
         <a href="product.html">Product Page</a>
-
-
-
         <div class="container">
-
             <div class="products">
             <div class="product1 image">
-              <a href="details2.html"><img src="img/item4.jpg" alt="black hat">
+              <a href="details2.html"><img src="img/item4.jpg" alt="wallet">
                <div class="productTitle">Colorful Wallet Set<br>
                 CA$50.00
                </div>
@@ -299,89 +358,73 @@
               </a>
             </div>
 
-
           </div>
         </div>
-
-
-
-      <h4>Sample code:</h4>
-      <code>
-        &lt;div class="productBox mainFont"&gt;<br>
-        &lt;div class="productBox-item-product3"&gt;<br>
-        &lt;div class="productBox-item-product-img"&gt;<br>
-        &lt;a href="#"&gt;&lt;img src="img/item3.png" class="image" alt="black hat"&gt;&lt;/a&gt;<br>
-        &lt;div class="overlayRight"&gt;New Collection&lt;/div&gt;<br>
-        &lt;div class="productTitle">Golden Rose Resin Earring&lt;br&gt;<br>
-         CA$35.00<br>
-         &lt;/div&gt;<br>
-         &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;<br>
-      </code>
 
       </section>
 
       <section class="element">
-  <h3>Payment Form</h3>
+        <h3>Payment Form</h3>
 
-  <h4>CSS selector:</h4>
-  <p>.row</p>
-  <p>.col-25</p>
-  <p>.col-50</p>
-  <p>.col-75</p>
-  <p>.inner_row</p>
-  <p>.contain</p>
-  <p>.input[type=text]</p>
-  <p>.icon-contain</p>
-  <p>.btn-pay</p>
-  <p>.text</p>
-
-
-<h4>Sample code:</h4>
-<code>
-
-  &lt;div class="radio-wrapper"&gt;<br>
-  &lt;div class="radio-option"&gt;<br>
-  &lt;input type="radio" name="input-radio" id="optionA"&gt;<br>
-  &lt;label for="optionA"&gt;Credit&lt;/label&gt;<br>
-  &lt;/div&gt;<br>
-
-  &lt;div class="radio-option"&gt;<br>
-  &lt;input type="radio" name="input-radio" id="optionB"&gt;<br>
-  &lt;label for="optionB"&gt;PayPal&lt;/label&gt;<br>
-  &lt;/div&gt;<br>
-  &lt;/div&gt;<br>
-
-  &lt;div class="form"&gt;<br>
-  &lt;div class="card space icon-relative"&gt;<br>
-  &lt;label class="label"&gt;Card holder&lt;/label&gt;<br>
-  &lt;input type="text" class="input" placeholder="Coding Market"&gt;<br>
-  &lt;i class="fas fa-user"&gt;&lt;/i&gt;<br>
-  &lt;/div&gt;<br>
-  &lt;div class="card space icon-relative"&gt;<br>
-  &lt;label class="label"&gt;Card number&lt;/label&gt;<br>
-  &lt;input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number"&gt;<br>
-  &lt;i class="far fa-credit-card"&gt;&lt;/i&gt;<br>
-  &lt;/div&gt;<br>
-  &lt;div class="card-grp space"&gt;<br>
-  &lt;div class="card-item icon-relative"&gt;<br>
-  &lt;label class="label"&gt;Expiry date&lt;/label&gt;<br>
-  &lt;input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00"&gt;<br>
-  &lt;i class="far fa-calendar-alt"&gt;&lt;/i&gt;<br>
-  &lt;/div&gt;<br>
-  &lt;div class="card-item icon-relative"&gt;<br>
-  &lt;label class="label"&gt;CVC&lt;/label&gt;<br>
-  &lt;input type="text" class="input" data-mask="000" placeholder="000"&gt;<br>
-  &lt;i class="fas fa-lock"&gt;&lt;/i&gt;<br>
-  &lt;/div&gt;<br>
-  &lt;/div&gt;<br>
-
-  &lt;div class="button button1"&gt;CHECKOUT&lt;/div&gt;<br>
-
-  &lt;/div&gt;<br>
-    </code>
+        <h4>CSS selector:</h4>
+        <p>.radio-wrapper</p>
+        <p>.radio-option</p>
+        <p>.form</p>
+        <p>.label</p>
+        <p>.input</p>
+        <p>.space</p>
+        <p>.icon-relaative</p>
+        <p>.card-grp</p>
+        <p>.button</p>
+        <p>.button1</p>
 
 
-<h4>Rendered element:</h4>
+      <h4>Sample code:</h4>
+      <code>
+
+        &lt;div class="radio-wrapper"&gt;<br>
+        &lt;div class="radio-option"&gt;<br>
+        &lt;input type="radio" name="input-radio" id="optionA"&gt;<br>
+        &lt;label for="optionA"&gt;Credit&lt;/label&gt;<br>
+        &lt;/div&gt;<br>
+
+        &lt;div class="radio-option"&gt;<br>
+        &lt;input type="radio" name="input-radio" id="optionB"&gt;<br>
+        &lt;label for="optionB"&gt;PayPal&lt;/label&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+
+        &lt;div class="form"&gt;<br>
+        &lt;div class="card space icon-relative"&gt;<br>
+        &lt;label class="label"&gt;Card holder&lt;/label&gt;<br>
+        &lt;input type="text" class="input" placeholder="Coding Market"&gt;<br>
+        &lt;i class="fas fa-user"&gt;&lt;/i&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div class="card space icon-relative"&gt;<br>
+        &lt;label class="label"&gt;Card number&lt;/label&gt;<br>
+        &lt;input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number"&gt;<br>
+        &lt;i class="far fa-credit-card"&gt;&lt;/i&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div class="card-grp space"&gt;<br>
+        &lt;div class="card-item icon-relative"&gt;<br>
+        &lt;label class="label"&gt;Expiry date&lt;/label&gt;<br>
+        &lt;input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00"&gt;<br>
+        &lt;i class="far fa-calendar-alt"&gt;&lt;/i&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div class="card-item icon-relative"&gt;<br>
+        &lt;label class="label"&gt;CVC&lt;/label&gt;<br>
+        &lt;input type="text" class="input" data-mask="000" placeholder="000"&gt;<br>
+        &lt;i class="fas fa-lock"&gt;&lt;/i&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+
+        &lt;div class="button button1"&gt;CHECKOUT&lt;/div&gt;<br>
+
+        &lt;/div&gt;<br>
+          </code>
+
+
+      <h4>Rendered element:</h4>
 
 <!--PAYMENT FORM- Reference-Watched this tutorial: https://www.youtube.com/watch?v=MPbF0FOpAVs  -->
 <div class="radio-wrapper">
@@ -427,58 +470,6 @@
       </div>
 
 </section>
-
-    <!--  <section class="element">
-        <h3>Payment Form</h3>
-        <a href="cart.html">Checkout Page</a>
-<br>
-
-
-        <form class="navfont form_input" >
-          <ul>
-            <label class="container">Credit or Debit Card<input type="radio" checked="checked" name="payment" value="card">
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">Paypal<input type="radio" name="payment" value="paypal">
-              <span class="checkmark"></span>
-            </label>
-
-          <p>Card Number * <br>
-          <input type="text" id="cardNumber" name="cardNumber"  placeholder="XXXX XXXX XXXX XXXX"></p>
-          <p class="navfont">Expiration Date *<br>
-          <input type="text" id="month" name="month" placeholder=" Month">
-          <input type="text" id="year" name="year" placeholder=" Year "></p>
-          <p class="navfont">CVV *      <br>
-          <input type="text" id="cvv" name="cvv" ></p>     <br>
-          <a href="#" class="button button1" >SUBMIT</a>
-        </ul>
-        </form>
-
-        <h4>Sample code:</h4>
-        <code>
-          &lt;form class="navfont"&gt;<br>
-          &lt;ul&gt;<br>
-          &lt;label class="container"&gt;Credit or Debit Card&lt;input type="radio" checked="checked" name="payment" value="card"&gt; <br>
-          &lt;span class="checkmark"&gt;&lt;/span&gt; <br>
-          &lt;/label&gt; <br>
-          &lt;label class="container"&gt;Paypal&lt;input type="radio" checked="checked" name="payment" value="paypal"&gt; <br>
-          &lt;span class="checkmark"&gt;&lt;/span&gt; <br>
-          &lt;/label&gt; <br>
-
-          &lt;p class="navfont"&gt;Card Number * <br>
-          &lt;input type="text" id="cardNumber" name="cardNumber"  placeholder="XXXX XXXX XXXX XXXX"&gt;&lt;/p&gt;<br>
-          &lt;p class="navfont"&gt;Expiration Date *<br>
-          &lt;input type="text" id="month" name="month" placeholder=" Month"&gt;<br>
-          &lt;input type="text" id="year" name="year" placeholder=" Year "&gt;&lt;/p&gt;  <br>
-          &lt;p class="navfont"&gt;CVV *      <br>
-          &lt;input type="text" id="cvv" name="cvv" &gt;&lt;/p&gt;<br>
-          &lt;a href="#" class="button button1" &gt;SUBMIT &lt;/a&gt;<br>
-          &lt;/ul&gt;<br>
-          &lt;/form&gt;<br>
-        </code>
-
-      </section> -->
-
 
 
 <!-- start of cart - Sunita-->
@@ -654,38 +645,10 @@
   </div>
 
 
-</section>
-
+  </section>
 <!-- end of cart - Sunita-->
 
-
-    <!--  <section class="element">
-        <h3>Checkout Cart</h3>
-        <a href="cart.html">Checkout Page</a>
-
-      </section>
-      <table class="cart">
-        <tr class="mainFont">
-          <td></td>
-          <td><b>Item</b></td>
-          <td><b>Item Price</b></td>
-          <td><b>Quantity</b></td>
-        </tr>
-        <tr class="paragraph">
-          <td><img src="img/item1.png" height="225px"></td>
-          <td><p>Gold Pearl Choker Necklace</p> <p><b>Color </b> Gold/White</p></td>
-          <td>CA$84.00</td>
-          <td><input type="text" id="cart" name="cart" size="1" value="1"></td>
-        </tr>
-        <tr>
-          <td><img src="img/item3.png" height="225px"></td>
-          <td><p>Golden Rose Resin Earring</p> <p><b>Color </b> Gold</p></td>
-          <td>CA$35.00</td>
-          <td><input type="text" id="cart" name="cart" size="1" value="1"></p></td>
-        </tr>
-      </table> -->
-
-    </section>
+</section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
 
@@ -768,7 +731,6 @@
       <div class="palette" style="background:#f1f1f1"></div>
        <div class="palette" style="background:#dfdee4"></div>
        <div class="palette" style="background:#e0dad7"></div>
-       <div class="palette" style="background:#c57648"></div>
        <div class="palette" style="background:#779c92"></div>
        <div class="palette" style="background:#786062"></div>
        <div class="palette" style="background:#5c5c5c"></div>
@@ -780,10 +742,10 @@
        <h3>Imagery</h3> </section>
        <p class="mainFont">Icons</p>
        <img src="img/icons.png" style="width: 60%;">
-       <img src="img/moodboard1.png" style="width: 60%;">
        <p class="mainFont">Moodboard</p>
+       <img src="img/moodboard1.png" style="width: 60%;">
        <img src="img/products.jpg" style="width: 60%;"><br><br>
-       <img src="img/imagery.png" style="width: 60%;">
+
 
 
         </section>
