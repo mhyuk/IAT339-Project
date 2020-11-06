@@ -42,8 +42,8 @@
       </nav>
       <br><br>
       <nav>
-        <a href="product.html">Product Page</a> |
-        <a href="cart.html">Cart</a>
+        <a href="../product.html">Product Page</a> |
+        <a href="../cart.html">Cart</a>
       </nav>
 
 
@@ -118,18 +118,26 @@
       <section class="element">
         <h3>Text Input Field with Label</h3>
 
-        <form class="form_input">
-          <input type="text" id="email" name="email" placeholder="Email"><br>
-          <br>
-          <input type="text" id="password" name="password" placeholder="Password"><br><br>
-        </form>
+        <div class="form">
+          <div class="card space icon-relative">
+            <label class="label">Card holder</label>
+            <input type="text" class="input" placeholder="Coding Market">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="card space icon-relative">
+            <label class="label">Card number</label>
+            <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+            <i class="far fa-credit-card"></i>
+          </div>
+        </div>
 
 
         <h4>Sample code:</h4>
-        <code>&lt;form class="form_input"&gt; <br>
-          <ul>
-             &lt;input type="text" id="email" name="email" placeholder="Email"&gt;<br></ul>
-          &lt;/form&gt; </code>
+        <code>&lt;div class="card space icon-relative"&gt; <br>
+          &lt;label class="label">Card holder&lt;/label&gt; <br>
+          &lt;input type="text" class="input" placeholder="Coding Market"&gt; <br>
+          &lt;i class="fas fa-user"&gt;&lt;/i&gt; <br>
+          &lt;/div&gt; <br> </code>
 
       </section>
 
@@ -137,25 +145,24 @@
       <section class="element">
         <h3>Radio Button with Label</h3>
 
-        <form>
-          <label class="container">Rose Pink<input type="radio" checked="checked" name="type" value="pink">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">Sky White<input type="radio" name="type" value="white">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">Dazzling Blue<input type="radio" name="type" value="blue">
-            <span class="checkmark"></span>
-          </label>
-        </form>
+        <div class="radio-wrapper">
+          <div class="radio-option">
+            <input type="radio" name="input-radio" id="optionA">
+            <label for="optionA">Credit</label>
+          </div>
+        
+          <div class="radio-option">
+            <input type="radio" name="input-radio" id="optionB">
+            <label for="optionB">PayPal</label>
+          </div>
+        </div>
 
         <h4>Sample code:</h4>
         <code>
-          &lt;form&gt; <br>
-          &lt;label class="container"&gt;Rose Pink&lt;input type="radio" checked="checked" name="type" value="pink"&gt; <br>
-          &lt;span class="checkmark"&gt;&lt;/span&gt; <br>
-          &lt;/label&gt; <br>
-          &lt;/form&gt;
+          &lt;div class="radio-option"&gt; <br>
+          &lt;input type="radio" name="input-radio" id="optionB"&gt; <br>
+          &lt;label for="optionB"&gt;PayPal&lt;/label&gt; <br>
+          &lt;/div&gt; <br>
          </code>
 
       </section>
@@ -273,35 +280,28 @@
 
 
 
-        <div class="productBox mainFont">
-        <div class="productBox-item-product1">
-        <div class="productBox-item-product-img">
-         <a href="#"><img src="img/item1.png" class="image" alt="black hat"></a>
-          <div class="overlayRight">New Collection</div>
-          <div class="productTitle">Gold Pearl Choker Necklace<br>
-            CA$84.00
-          </div>
-           </div>
+        <div class="container">
 
-          </div>
-
-         <div class="productBox-item-product2">
-         <div class="productBox-item-product-img">
-         <a href="#"><img src="img/item2.png" class="image" alt="black hat"></a>
-         <div class="overlayRight">New Collection</div>
-         <div class="productTitle">Trendy Solid stretch headband<br>
-          CA$15.00
-        </div>
-          </div></div>
-
-          <div class="productBox-item-product3">
-          <div class="productBox-item-product-img">
-          <a href="#"><img src="img/item3.png" class="image " alt="black hat"></a>
-            <div class="overlayRight">New Collection</div>
-            <div class="productTitle">Golden Rose Resin Earring<br>
-              CA$35.00
+            <div class="products">
+            <div class="product1 image">
+              <a href="details2.html"><img src="img/item4.jpg" alt="black hat">
+               <div class="productTitle">Colorful Wallet Set<br>
+                CA$50.00
+               </div>
+              </a>
             </div>
-            </div></div></div>
+
+            <div class="product1 image">
+              <a href="details.html"><img src="img/item5.jpg" alt="black hat">
+               <div class="productTitle">Trendy White Glasses<br>
+                CA$25.00
+               </div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
 
 
 
@@ -337,157 +337,94 @@
 
 
 <h4>Sample code:</h4>
+<code>
 
-<code>&lt;div class="row"&gt;</code>
-  <code>&lt;div class="inner_row"&gt;</code>
-  <code>&lt;div class="col-75"&gt;</code>
-    <code>&lt;div class="contain"&gt;</code>
-      <code>&lt;form action="/action_page.php"&gt;</code>
+  &lt;div class="radio-wrapper"&gt;<br>
+  &lt;div class="radio-option"&gt;<br>
+  &lt;input type="radio" name="input-radio" id="optionA"&gt;<br>
+  &lt;label for="optionA"&gt;Credit&lt;/label&gt;<br>
+  &lt;/div&gt;<br>
 
-        <code>&lt;div class="row"&gt;</code>
-          <code>&lt;div class="col-50"&gt;</code>
-            <code>&lt;h3&gt;Billing Address&lt;/h3&gt;</code>
-            <code>&lt;label for="fname"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt; Full Name&lt;/label&gt;</code>
-            <code>&lt;input type="text" id="fname" name="firstname" class="text" placeholder="Sunita Mirzada"&gt;</code>
-            <code>&lt;label for="email"&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt; Email&lt;/label&gt;</code>
-            <code>&lt;input type="text" id="email" name="email" class="text" placeholder="sunita@example.com"&gt;</code>
-            <code>&lt;label for="adr"&gt;&lt;i class="fa fa-address-card-o"&gt;&lt;/i&gt; Address&lt;/label&gt;</code>
-            <code>&lt;input type="text" id="adr" name="address" class="text" placeholder="542 W. 10th Ave."&gt;</code>
-            <code>&lt;label for="city"&gt;&lt;i class="fa fa-institution">&lt;/i&gt;City&lt;/label&gt;</code>
-            <code>&lt;input type="text" id="city" name="city" class="text" placeholder="New York"&gt;</code>
+  &lt;div class="radio-option"&gt;<br>
+  &lt;input type="radio" name="input-radio" id="optionB"&gt;<br>
+  &lt;label for="optionB"&gt;PayPal&lt;/label&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;/div&gt;<br>
 
-            <code>&lt;div class="row"&gt;</code>
-              <code>&lt;div class="col-50"&gt;</code>
-                <code>&lt;label for="state"&gt;State&lt;/label&gt;</code>
-                <code>&lt;input type="text" id="state" name="state" class="text" placeholder="NY"&gt;</code>
-              <code>&lt;/div&gt;</code>
-              <code>&lt;div class="col-50"&gt;</code>
-                <code>&lt;label for="zip"&gt;Zip&lt;/label&gt;</code>
-                <code>&lt;input type="text" id="zip" name="zip" class="text" placeholder="10001"&gt;</code>
-              <code>&lt;/div&gt;</code>
-            <code>&lt;/div&gt;</code>
-          <code>&lt;/div&gt;</code>
+  &lt;div class="form"&gt;<br>
+  &lt;div class="card space icon-relative"&gt;<br>
+  &lt;label class="label"&gt;Card holder&lt;/label&gt;<br>
+  &lt;input type="text" class="input" placeholder="Coding Market"&gt;<br>
+  &lt;i class="fas fa-user"&gt;&lt;/i&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;div class="card space icon-relative"&gt;<br>
+  &lt;label class="label"&gt;Card number&lt;/label&gt;<br>
+  &lt;input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number"&gt;<br>
+  &lt;i class="far fa-credit-card"&gt;&lt;/i&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;div class="card-grp space"&gt;<br>
+  &lt;div class="card-item icon-relative"&gt;<br>
+  &lt;label class="label"&gt;Expiry date&lt;/label&gt;<br>
+  &lt;input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00"&gt;<br>
+  &lt;i class="far fa-calendar-alt"&gt;&lt;/i&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;div class="card-item icon-relative"&gt;<br>
+  &lt;label class="label"&gt;CVC&lt;/label&gt;<br>
+  &lt;input type="text" class="input" data-mask="000" placeholder="000"&gt;<br>
+  &lt;i class="fas fa-lock"&gt;&lt;/i&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;/div&gt;<br>
 
-          <code>&lt;div class="col-50"&gt;</code>
-            <code>&lt;h3&gt;Payment&lt;/h3&gt;</code>
+  &lt;div class="button button1"&gt;CHECKOUT&lt;/div&gt;<br>
 
-            <code>&lt;div class="radio-wrapper"&gt;</code>
-              <code>&lt;div class="radio-option"&gt;</code>
-                <code>&lt;input type="radio" name="input-radio" id="optionA"&gt;</code>
-                <code>&lt;label for="optionA"&gt;Credit&lt;/label&gt;</code>
-              <code>&lt;/div&gt;</code>
-
-              <code>&lt;div class="radio-option"&gt;</code>
-                <code>&lt;input type="radio" name="input-radio" id="optionB"&gt;</code>
-                <code>&lt;label for="optionB"&gt;PayPal&lt;/label&gt;</code>
-              <code>&lt;/div&gt;</code>
-          <code>&lt;/div&gt;</code>
-
-
-            <code>&lt;label for="cname"&gt;Name on Card&lt;/label&gt;</code>
-            <code>&lt;input type="text" id="cname" name="cardname" class="text" placeholder="Sunita Mirzada"&gt;</code>
-            <code>&lt;label for="ccnum"&gt;Credit card number&lt;/label&gt;</code>
-            <code>&lt;input type="text" id="ccnum" name="cardnumber" class="text" placeholder="1111-2222-3333-4444"&gt;</code>
-            <code>&lt;label for="expmonth"&gt;Exp Month&lt;/label&gt;</code>
-            <code>&lt;input type="text" id="expmonth" name="expmonth" class="text" placeholder="October"&gt;</code>
-            <code>&lt;div class="row"&gt;</code>
-              <code>&lt;div class="col-50"&gt;</code>
-                <code>&lt;label for="expyear"&gt;Exp Year&lt;/label&gt;</code>
-                <code>&lt;input type="text" id="expyear" name="expyear" class="text" placeholder="2024"&gt;</code>
-            <code>&lt;/div&gt;</code>
-              <code>&lt;div class="col-50"&gt;</code>
-                <code>&lt;label for="cvv"&gt;CVV&lt;/label&gt;</code>
-                <code>&lt;input type="text" id="cvv" name="cvv" class="text" placeholder="123"&gt;</code>
-              <code>&lt;/div&gt;</code>
-            <code>&lt;/div&gt;</code>
-          <code>&lt;/div&gt;</code>
-        <code>&lt;/div&gt;</code>
-        <code>&lt;label&gt;</code>
-          <code>&lt;input type="checkbox" checked="checked" name="sameadr"&gt; Shipping address same as billing</code>
-        <code>&lt;/label&gt;</code>
-        <code>&lt;input type="submit" value="Continue to checkout" class="btn-pay"&gt;</code>
-      <code>&lt;/form&gt;</code>
-    <code>&lt;/div&gt;</code>
-  <code>&lt;/div&gt;</code>
-<code>&lt;/div&gt;</code>
-<code>&lt;/div&gt;</code>
+  &lt;/div&gt;<br>
+    </code>
 
 
 <h4>Rendered element:</h4>
 
 <!--PAYMENT FORM- Reference-Watched this tutorial: https://www.youtube.com/watch?v=MPbF0FOpAVs  -->
-<div class="row">
-  <div class="inner_row">
-  <div class="col-75">
-    <div class="contain">
-      <form action="/action_page.php">
-
-        <div class="row">
-          <div class="col-50">
-            <h3>Billing Address</h3>
-            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="firstname" class="text" placeholder="Sunita Mirzada">
-            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" class="text" placeholder="sunita@example.com">
-            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="adr" name="address" class="text" placeholder="542 W. 10th Ave.">
-            <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" class="text" placeholder="New York">
-
-            <div class="row">
-              <div class="col-50">
-                <label for="state">State</label>
-                <input type="text" id="state" name="state" class="text" placeholder="NY">
-              </div>
-              <div class="col-50">
-                <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" class="text" placeholder="10001">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-50">
-            <h3>Payment</h3>
-
-            <form>
-              <label class="container">Credit<input type="radio" checked="checked" name="type" value="pink">
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">PayPal<input type="radio" name="type" value="white">
-                <span class="checkmark"></span>
-              </label>
-            </form>
-
-
-            <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" class="text" placeholder="Sunita Mirzada">
-            <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" class="text" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" class="text" placeholder="October">
-            <div class="row">
-              <div class="col-50">
-                <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" class="text" placeholder="2024">
-              </div>
-              <div class="col-50">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" class="text" placeholder="123">
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
-        <input type="submit" value="CONTINUE TO CHECKOUT" class="button button1">
-      </form>
-    </div>
+<div class="radio-wrapper">
+  <div class="radio-option">
+    <input type="radio" name="input-radio" id="optionA">
+    <label for="optionA">Credit</label>
   </div>
 
+  <div class="radio-option">
+    <input type="radio" name="input-radio" id="optionB">
+    <label for="optionB">PayPal</label>
+  </div>
 </div>
-</div>
+
+    <div class="form">
+      <div class="card space icon-relative">
+        <label class="label">Card holder</label>
+        <input type="text" class="input" placeholder="Coding Market">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Card number</label>
+        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date</label>
+          <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00">
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVC</label>
+          <input type="text" class="input" data-mask="000" placeholder="000">
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+
+      <div class="button button1">
+        CHECKOUT
+      </div>
+
+      </div>
 
 </section>
 
